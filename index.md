@@ -5,7 +5,7 @@
 ### Team Projects 
 
 [Sprite](https://hci.stanford.edu/courses/cs147/2018/au/projects/TransformingLivingSpace/Sprite/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/sprite poster.jpeg?raw=true"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
