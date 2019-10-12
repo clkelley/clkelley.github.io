@@ -9,7 +9,7 @@
 
 ---
 [Glassdoor Redesign](https://www.figma.com/file/CPz8bdQhWZiqPVUsKU0fEKNB/CS247P3Prototype?node-id=0%3A1)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/glassdoor_screenshot.png?raw=true"/>
 
 ---
 [Project 3 Title](http://example.com/)
