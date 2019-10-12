@@ -8,7 +8,7 @@
 <img src="images/sprite poster.jpeg?raw=true"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
+[Glassdoor Redesign](https://www.figma.com/file/CPz8bdQhWZiqPVUsKU0fEKNB/CS247P3Prototype?node-id=0%3A1)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
