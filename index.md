@@ -2,9 +2,9 @@
 
 ---
 
-### Category Name 1 
+### Team Projects 
 
-[Project 1 Title](/sample_page)
+[Sprite](https://hci.stanford.edu/courses/cs147/2018/au/projects/TransformingLivingSpace/Sprite/)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
