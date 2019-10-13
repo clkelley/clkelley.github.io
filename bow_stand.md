@@ -1,6 +1,6 @@
 ## Bow Stand
 
-**Project description:** For Design and Manufacturing, I created a collapsible archery bow stand out of machined aluminum. <br> Through prototyping and several iterations of machining, I settled on a final product I am happy with. The legs fold away using a similar mechanism to tent poles.
+**For Design and Manufacturing, I created a collapsible archery bow stand out of machined aluminum.** <br> Through prototyping and several iterations of machining, I settled on a final product I am happy with. The legs fold away using a similar mechanism to tent poles.
 
 <img src="images/Presentation Slide Final Clara Kelley.jpeg?raw=true"/>
 
