@@ -23,7 +23,7 @@ if (isAwesome){
 ### 3. Support the selection of appropriate statistical tools and techniques
 
 <iframe width="560" height="315"
-src="https://www.youtube.com/embed/MUQfKFzIOeU"
+src="/media/Loop Movie Presentation 720p.mov"
 frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
