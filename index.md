@@ -15,7 +15,7 @@
 
 ### Physical Design
 
-- [Project 1 Title](/bow_stand.md)
+- [Project 1 Title](/bow_stand)
 - [Project 2 Title](http://example.com/)
 
 ---
