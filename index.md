@@ -2,7 +2,7 @@
 
 ---
 
-### Team Projects 
+### Team Projects
 
 [Sprite](https://hci.stanford.edu/courses/cs147/2018/au/projects/TransformingLivingSpace/Sprite/)
 [<img src="images/sprite poster.jpeg?raw=true"/>](https://hci.stanford.edu/courses/cs147/2018/au/projects/TransformingLivingSpace/Sprite/)
@@ -15,7 +15,7 @@
 
 ### Physical Design
 
-- [Project 1 Title](http://example.com/)
+- [Project 1 Title](/bow_stand)
 - [Project 2 Title](http://example.com/)
 
 ---
