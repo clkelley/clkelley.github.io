@@ -16,7 +16,6 @@
 ### Physical Design
 
 - [Bow Stand](/bow_stand)
-- [Project 2 Title](http://example.com/)
 
 ---
 
