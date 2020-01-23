@@ -4,7 +4,7 @@
 
 # College
 <img src="images/waffle_iron_poster_2019.jpg?raw=true" height="200em"/>
-<img src="images/screenprinting_2017.jpg?raw=true" height="200em"/>
+<img src="images/silkscreening_2017.jpg?raw=true" height="200em"/>
 <img src="images/icon_golfcart_app_2016.jpg?raw=true" width="50em"/>
 <img src="images/ifsel_branding_final_2016.jpg?raw=true" height="200em"/>
 
