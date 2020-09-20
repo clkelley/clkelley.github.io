@@ -1,0 +1,135 @@
+import React, {Component, useState} from 'react';
+import logo from '../logo.svg';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link as RouterLink
+} from "react-router-dom";
+import {
+  AppBar,
+  Toolbar,
+  IconButton,
+  Typography,
+  Button,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+  makeStyles,
+  Hidden,
+} from "@material-ui/core";
+import {
+  Menu as MenuIcon
+} from "@material-ui/icons";
+import Home from "../Pages/Home";
+import About from "../Pages/About";
+import Work from "../Pages/Work";
+import { createBrowserHistory } from "history";
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+  },
+}));
+
+const history = createBrowserHistory();
+
+
+function MobileDrawer({open, onClose, onItemClick}) {
+  const classes = useStyles();
+
+  const [state, setState] = React.useState({
+    menuOpen: false,
+  });
+
+  return (
+    <Drawer variant='temporary' open={open} onClose={onClose} classes={classes}>
+      <List>
+          <ListItem
+            button
+            component={RouterLink}
+            to="/"
+            onClick={onItemClick("Home")}
+          >
+            <ListItemText>Explore</ListItemText>
+          </ListItem>
+          <ListItem
+            button
+            component={RouterLink}
+            to="/work"
+            onClick={onItemClick("Work")}
+          >
+            <ListItemText>Work</ListItemText>
+          </ListItem>
+          <ListItem
+            button
+            component={RouterLink}
+            to="/about"
+            onClick={onItemClick("About")}
+          >
+            <ListItemText>About</ListItemText>
+          </ListItem>
+      </List>
+    </Drawer>
+  );
+}
+
+function WebAppBar(){
+    const classes = useStyles();
+    const [drawer, setDrawer] = useState(false);
+
+    const toggleDrawer = () => {
+    setDrawer(!drawer);
+    };
+
+    const onItemClick = title => () => {
+    console.log(title);
+    setDrawer(!drawer);
+    };
+
+    return (
+      <React.Fragment>
+      <Router history={history}>
+      <AppBar position="fixed">
+        <Toolbar>
+          <Hidden smUp>
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={toggleDrawer}>
+            <MenuIcon />
+          </IconButton>
+          </Hidden>
+          <Typography variant="h6" className={classes.title}>
+            Clara Kelley
+          </Typography>
+          <Hidden xsDown>
+          <Button color="inherit" component={RouterLink} to="/">Explore</Button>
+          <Button color="inherit" component={RouterLink} to="/work">Work</Button>
+          <Button color="inherit" component={RouterLink} to="/about">About</Button>
+          </Hidden>
+        </Toolbar>
+      </AppBar>
+      <Toolbar>
+      </Toolbar>
+      <MobileDrawer
+        open={drawer}
+        onClose={toggleDrawer}
+        onItemClick={onItemClick}
+      />
+      <main className={classes.content}>
+        <Route exact path="/" component={Home} />
+        <Route path="/work" component={Work} />
+        <Route path="/about" component={About} />
+      </main>
+      </Router>
+      </React.Fragment>
+    );
+}
+
+export default WebAppBar;

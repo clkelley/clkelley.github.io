@@ -1,11 +1,55 @@
 import React from 'react';
 import logo from './logo.svg';
+
 import './App.css';
+import WebAppBar from "./Components/WebAppBar.js";
+import {
+  MuiThemeProvider,
+  createMuiTheme
+} from '@material-ui/core/styles';
+import {grey, green} from '@material-ui/core/colors';
+
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      // light: will be calculated from palette.primary.main,
+      main: '#ffffff',
+      // dark: will be calculated from palette.primary.main,
+      // contrastText: will be calculated to contrast with palette.primary.main
+    },
+    secondary: {
+      light: '#0066ff',
+      main: '#0044ff',
+      // dark: will be calculated from palette.secondary.main,
+      contrastText: '#ffcc00',
+    }
+  },
+  status: {
+    danger: 'orange',
+  },
+  shadows: ["none"],
+  typography: {
+    fontFamily: [
+      'Kumbh Sans',
+      'Roboto',
+      'Monserrat',
+      'Kumbh Sans',
+      'Lato',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+  }
+});
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,7 +62,10 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header>*/}
+      <MuiThemeProvider theme={theme}>
+      <WebAppBar />
+      </MuiThemeProvider>
     </div>
   );
 }
