@@ -35,8 +35,17 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
+  navButton: {
+    margin: theme.spacing(2),
+  },
   title: {
     flexGrow: 1,
+    [theme.breakpoints.up('xs')]: {
+      textAlign: 'left',
+    },
+    [theme.breakpoints.down('xs')]: {
+      textAlign: 'right',
+    }
   },
 }));
 
@@ -109,9 +118,9 @@ function WebAppBar(){
             Clara Kelley
           </Typography>
           <Hidden xsDown>
-          <Button color="inherit" component={RouterLink} to="/">Explore</Button>
-          <Button color="inherit" component={RouterLink} to="/work">Work</Button>
-          <Button color="inherit" component={RouterLink} to="/about">About</Button>
+          <Button color="inherit" className={classes.navButton} component={RouterLink} to="/">Explore</Button>
+          <Button color="inherit" className={classes.navButton} component={RouterLink} to="/work">Work</Button>
+          <Button color="inherit" className={classes.navButton} component={RouterLink} to="/about">About</Button>
           </Hidden>
         </Toolbar>
       </AppBar>
