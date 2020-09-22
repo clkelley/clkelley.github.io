@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import {
   withStyles,
+  Grid,
   GridList,
   GridListTile,
   Typography,
@@ -98,18 +99,10 @@ function Home(props) {
   return (
     <div className={classes.root}>
       <Typography variant="h3" gutterBottom>
-        home
-      </Typography>
-      <Typography variant="h3" gutterBottom>
         digital/physical interaction designer
       </Typography>
-      <GridList cellHeight={160} className={classes.gridList} cols={3}>
-        {tileData.map(tile => (
-          <GridListTile key={tile.img} cols={tile.cols || 1}>
-            <img src={tile.img} alt={tile.title} />
-          </GridListTile>
-        ))}
-      </GridList>
+      <Grid container>
+      </Grid>
     </div>
   );
 }
