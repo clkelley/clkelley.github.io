@@ -31,18 +31,22 @@ const theme = createMuiTheme({
   shadows: ["none"],
   typography: {
     fontFamily: [
-      'Kumbh Sans',
-      'Roboto',
-      'Monserrat',
-      'Kumbh Sans',
-      'Lato',
-      '"Helvetica Neue"',
+      '"Montserrat"',
+      '"Roboto"',
+      '"Lato"',
+      'Helvetica Neue',
       'Arial',
       'sans-serif',
       '"Apple Color Emoji"',
       '"Segoe UI Emoji"',
       '"Segoe UI Symbol"',
     ].join(','),
+    button: {
+      fontSize: "0.875rem",
+      lineHeight: 1.5,
+      letterSpacing: "0.02857em",
+    },
+
   }
 });
 
