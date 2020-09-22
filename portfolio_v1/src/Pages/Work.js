@@ -2,10 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import {
   withStyles,
-  GridList,
-  GridListTile,
+  Grid,
   Typography,
+  Hidden,
 } from "@material-ui/core";
+import ProjectCard from "../Components/ProjectCard.js"
 
 const styles = theme => ({
   root: {
@@ -15,9 +16,8 @@ const styles = theme => ({
     overflow: "hidden",
     backgroundColor: theme.palette.background.paper
   },
-  gridList: {
-    width: 500,
-    height: 450
+  grid: {
+    flexGrow: 1,
   },
   subheader: {
     width: "100%"
@@ -97,12 +97,10 @@ function Work(props) {
 
   return (
     <div className={classes.root}>
-      <Typography variant="h3" gutterBottom>
-        My work
-      </Typography>
-      <Typography variant="h3" gutterBottom>
-        digital/physical interaction designer
-      </Typography>
+      <Grid container className={classes.grid}>
+      <ProjectCard />
+      </Grid>
+      {/*}<Hidden>
       <GridList cellHeight={160} className={classes.gridList} cols={3}>
         {tileData.map(tile => (
           <GridListTile key={tile.img} cols={tile.cols || 1}>
@@ -110,6 +108,8 @@ function Work(props) {
           </GridListTile>
         ))}
       </GridList>
+      </Hidden>*/}
+
     </div>
   );
 }
