@@ -63,7 +63,7 @@ const styles = theme => ({
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-around",
-    overflow: "hidden",
+    overflow: "scroll",
     flexGrow: 1
   }
 });
@@ -127,7 +127,7 @@ function About(props) {
         </Toolbar>
         <Grid container className={classes.pdfPage}>
           <Document file={resume} >
-            <Page pageNumber={1}/>
+            <Page pageNumber={1} scale={0.75}/>
           </Document>
         </Grid>
 

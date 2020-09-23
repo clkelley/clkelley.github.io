@@ -8,6 +8,9 @@ import {
   Typography,
 } from "@material-ui/core";
 
+import tileData from "../Components/WorkConstants.js"
+import ProjectCard from "../Components/ProjectCard.js"
+
 const styles = theme => ({
   root: {
     display: "flex",
@@ -25,76 +28,9 @@ const styles = theme => ({
   }
 });
 
-const tileData = [
-  {
-    img: "https://material-ui.com/static/images/grid-list/breakfast.jpg",
-    title: "Breakfast",
-    author: "jill111",
-    cols: 2,
-    featured: true
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/burgers.jpg",
-    title: "Tasty burger",
-    author: "director90"
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/camera.jpg",
-    title: "Camera",
-    author: "Danson67"
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/morning.jpg",
-    title: "Morning",
-    author: "fancycrave1",
-    featured: true
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/hats.jpg",
-    title: "Hats",
-    author: "Hans"
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/honey.jpg",
-    title: "Honey",
-    author: "fancycravel"
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/vegetables.jpg",
-    title: "Vegetables",
-    author: "jill111",
-    cols: 2
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/plant.jpg",
-    title: "Water plant",
-    author: "BkrmadtyaKarki"
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/mushroom.jpg",
-    title: "Mushrooms",
-    author: "PublicDomainPictures"
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/olive.jpg",
-    title: "Olive oil",
-    author: "congerdesign"
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/star.jpg",
-    title: "Sea star",
-    cols: 2,
-    author: "821292"
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/bike.jpg",
-    title: "Bike",
-    author: "danfador"
-  }
-];
-
 function Home(props) {
   const { classes } = props;
+  console.log(tileData);
 
   return (
     <div className={classes.root}>
@@ -102,6 +38,42 @@ function Home(props) {
         digital/physical interaction designer
       </Typography>
       <Grid container>
+        <Grid sm={12} md={8} item>
+          <ProjectCard
+            key={tileData[8].img}
+            image={tileData[8].img}
+            title={tileData[8].title}
+            date={tileData[8].date}
+            attributes={tileData[8].attributes}
+            credit={tileData[8].credit}
+            description={tileData[8].description}/>
+        </Grid>
+        <Grid sm={12} md={4} item>
+        </Grid>
+        <Grid sm={12} md={4} item>
+        </Grid>
+        <Grid sm={12} md={8} item>
+          <ProjectCard
+            key={tileData[2].img}
+            image={tileData[2].img}
+            title={tileData[2].title}
+            date={tileData[2].date}
+            attributes={tileData[2].attributes}
+            credit={tileData[2].credit}
+            description={tileData[2].description}/>
+        </Grid>
+        <Grid sm={12} md={8} item>
+          <ProjectCard
+            key={tileData[9].img}
+            image={tileData[9].img}
+            title={tileData[9].title}
+            date={tileData[9].date}
+            attributes={tileData[9].attributes}
+            credit={tileData[9].credit}
+            description={tileData[9].description}/>
+        </Grid>
+        <Grid sm={12} md={4} item>
+        </Grid>
       </Grid>
     </div>
   );

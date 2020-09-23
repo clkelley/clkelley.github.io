@@ -1,13 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import PropTypes from "prop-types";
 import {
   withStyles,
   Grid,
   Typography,
   Hidden,
-  Paper
+  Paper,
+  Chip
 } from "@material-ui/core";
 import ProjectCard from "../Components/ProjectCard.js"
+import tileData from "../Components/WorkConstants.js"
 
 const styles = theme => ({
   root: {
@@ -22,85 +24,69 @@ const styles = theme => ({
   },
   subheader: {
     width: "100%"
-  }
-});
+  },
+  filterBar:{
 
-const tileData = [
-  {
-    img: "/images/lightbeat in progress.png",
-    title: "LED Shirt / Prom Dress",
-    author: "jill111",
-    date: "2013",
-    attributes: ["Physical", "Digital", "iOS", "Android", "Embedded"],
-    featured: true
   },
-  {
-    img: "/images/angel_cutout.png",
-    title: "Mechanical Wings (Costume)",
-    attributes: ["Physical", "Mechanical Design", "Art"],
-    date: "2016"
+  chipStyle:{
+    margin: "0.25rem",
   },
-  {
-    img: "/images/sprite_iphone.png",
-    title: "Sprite",
-    date: "2018",
-    attributes: ["Digital","Team", "React", "Firebase", "iOS", "Android", "UX", "UI", "Mobile Application","Design Thinking", "User Research", "Prototyping", "User Testing"],
-    featured: true
-  },
-  {
-    img: "/images/rendezvous_browser.png",
-    title: "Rendezvous",
-    date: "2020",
-    attributes: ["Digital","Team", "React", "Firebase", "UX", "Web Application"],
-  },
-  {
-    img: "/images/glassdoor_redesign.png",
-    title: "Redesign: Glassdoor Mobile",
-    date: "2019",
-    attributes: ["Digital","Team", "React", "Firebase", "iOS", "Android", "UX", "UI", "Prototyping"],
-  },
-  {
-    img: "/images/bow_stand.png",
-    title: "Bow Stand",
-    date: "2018",
-    attributes: ["Physical", "Manufacturing", "Prototyping", "Design Thinking"],
-  },
-  {
-    img: "/images/waffle_iron_no_text.png",
-    title: "Origami Waffle Iron",
-    date: "2019",
-    attributes: ["Physical", "Manufacturing", "Prototyping", "Design Thinking", "CAD", "CNC"],
-  },
-  {
-    img: "/images/silkscreening_john.png",
-    title: "Silkscreen T-Shirts",
-    attributes: ["Physical", "Graphic Design", "Art"],
-    date: "2018",
-  },
-  {
-    img: "/images/x2_in_use.png",
-    title: "Skydio Software Engineering",
-    attributes: ["Digital", "Android", "Open Source", "Full Stack Development", "Internship"],
-    credit: " Image courtesy of Skydio ",
-    date: "2019",
-  },
-  {
-    img: "/images/s2_lifestyle.jpg",
-    title: "Skydio User Research",
-    attributes: ["Digital", "Physical", "UX", "User Research", "Design Thinking", "Internship"],
-    credit: " Image courtesy of Skydio ",
-    date: "2020",
-  },
-];
+});
 
 function Work(props) {
   const { classes } = props;
 
+  const [chiplist, setChipList] = useState([]);
+  const [filteredWorks, setFilteredWorks] = useState(tileData);
+
+  const handleChipClick = (chipName) => {
+    if(chiplist.includes(chipName)){
+      setChipList((chiplist) => chiplist.filter((chip) => chip !== chipName));
+      //setFilteredWorks((tileData) => tileData.filter((tile) => chiplist.foreach((chip) => tile.attributes.includes(chip)));
+      var newFiltered = []
+      tileData.forEach((tile) => {
+        var match = true;
+        chiplist.forEach((chip) =>{
+          if (chip !== chipName && !tile.attributes.includes(chip)){
+            match = false;
+          }
+        });
+        if (match) {
+          newFiltered.push(tile);
+        }
+      });
+      setFilteredWorks(newFiltered);
+    } else {
+      setChipList([...chiplist, chipName]);
+      setFilteredWorks((tileData) => tileData.filter((tile) => tile.attributes.includes(chipName)));
+    }
+    console.log(chiplist);
+  }
+
   return (
     <div className={classes.root}>
+      <Grid className={classes.filterBar}>
+      {chiplist.map(title => (
+      <Chip
+        variant="outlined"
+        size="small"
+        key={title}
+        label={title}
+        className={classes.chipStyle}
+        onDelete={() => handleChipClick(title)}/>
+      ))}
+      </Grid>
       <Grid container className={classes.grid}>
-      {tileData.map(tile => (
-        <ProjectCard key={tile.img} image={tile.img} title={tile.title} date={tile.date} attributes={tile.attributes} credit={tile.credit}/>
+      {filteredWorks.map(tile => (
+        <ProjectCard
+          key={tile.img}
+          image={tile.img}
+          title={tile.title}
+          date={tile.date}
+          attributes={tile.attributes}
+          credit={tile.credit}
+          description={tile.description}
+          chipCallback={handleChipClick}/>
       ))}
       </Grid>
     </div>

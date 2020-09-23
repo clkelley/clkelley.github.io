@@ -59,10 +59,6 @@ const useStyles = makeStyles((theme) => ({
 function ProjectCard(props) {
   const classes = useStyles();
 
-  const handleClick = () => {
-    console.info('You clicked the Chip.');
-  };
-
   return (
     <Card className={classes.root} variant="outlined">
       <Grid container className={classes.mainGrid}>
@@ -88,8 +84,7 @@ function ProjectCard(props) {
               {props.date}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p" align="right">
-              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-              across all continents except Antarctica
+              {props.description}
             </Typography>
             <CardContent>
               {props.attributes.map(title => (
@@ -99,7 +94,7 @@ function ProjectCard(props) {
                 key={title}
                 label={title}
                 className={classes.chipStyle}
-                onClick={handleClick}/>
+                onClick={() => props.chipCallback(title)}/>
               ))}
             </CardContent>
             <CardActions className={classes.cardButtons}>
