@@ -5,6 +5,7 @@ import {
   Grid,
   Typography,
   Hidden,
+  Paper
 } from "@material-ui/core";
 import ProjectCard from "../Components/ProjectCard.js"
 
@@ -26,70 +27,70 @@ const styles = theme => ({
 
 const tileData = [
   {
-    img: "https://material-ui.com/static/images/grid-list/breakfast.jpg",
-    title: "Breakfast",
+    img: "/images/lightbeat in progress.png",
+    title: "LED Shirt / Prom Dress",
     author: "jill111",
-    cols: 2,
+    date: "2013",
+    attributes: ["Physical", "Digital", "iOS", "Android", "Embedded"],
     featured: true
   },
   {
-    img: "https://material-ui.com/static/images/grid-list/burgers.jpg",
-    title: "Tasty burger",
-    author: "director90"
+    img: "/images/angel_cutout.png",
+    title: "Mechanical Wings (Costume)",
+    attributes: ["Physical", "Mechanical Design", "Art"],
+    date: "2016"
   },
   {
-    img: "https://material-ui.com/static/images/grid-list/camera.jpg",
-    title: "Camera",
-    author: "Danson67"
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/morning.jpg",
-    title: "Morning",
-    author: "fancycrave1",
+    img: "/images/sprite_iphone.png",
+    title: "Sprite",
+    date: "2018",
+    attributes: ["Digital","Team", "React", "Firebase", "iOS", "Android", "UX", "UI", "Mobile Application","Design Thinking", "User Research", "Prototyping", "User Testing"],
     featured: true
   },
   {
-    img: "https://material-ui.com/static/images/grid-list/hats.jpg",
-    title: "Hats",
-    author: "Hans"
+    img: "/images/rendezvous_browser.png",
+    title: "Rendezvous",
+    date: "2020",
+    attributes: ["Digital","Team", "React", "Firebase", "UX", "Web Application"],
   },
   {
-    img: "https://material-ui.com/static/images/grid-list/honey.jpg",
-    title: "Honey",
-    author: "fancycravel"
+    img: "/images/glassdoor_redesign.png",
+    title: "Redesign: Glassdoor Mobile",
+    date: "2019",
+    attributes: ["Digital","Team", "React", "Firebase", "iOS", "Android", "UX", "UI", "Prototyping"],
   },
   {
-    img: "https://material-ui.com/static/images/grid-list/vegetables.jpg",
-    title: "Vegetables",
-    author: "jill111",
-    cols: 2
+    img: "/images/bow_stand.png",
+    title: "Bow Stand",
+    date: "2018",
+    attributes: ["Physical", "Manufacturing", "Prototyping", "Design Thinking"],
   },
   {
-    img: "https://material-ui.com/static/images/grid-list/plant.jpg",
-    title: "Water plant",
-    author: "BkrmadtyaKarki"
+    img: "/images/waffle_iron_no_text.png",
+    title: "Origami Waffle Iron",
+    date: "2019",
+    attributes: ["Physical", "Manufacturing", "Prototyping", "Design Thinking", "CAD", "CNC"],
   },
   {
-    img: "https://material-ui.com/static/images/grid-list/mushroom.jpg",
-    title: "Mushrooms",
-    author: "PublicDomainPictures"
+    img: "/images/silkscreening_john.png",
+    title: "Silkscreen T-Shirts",
+    attributes: ["Physical", "Graphic Design", "Art"],
+    date: "2018",
   },
   {
-    img: "https://material-ui.com/static/images/grid-list/olive.jpg",
-    title: "Olive oil",
-    author: "congerdesign"
+    img: "/images/x2_in_use.png",
+    title: "Skydio Software Engineering",
+    attributes: ["Digital", "Android", "Open Source", "Full Stack Development", "Internship"],
+    credit: " Image courtesy of Skydio ",
+    date: "2019",
   },
   {
-    img: "https://material-ui.com/static/images/grid-list/star.jpg",
-    title: "Sea star",
-    cols: 2,
-    author: "821292"
+    img: "/images/s2_lifestyle.jpg",
+    title: "Skydio User Research",
+    attributes: ["Digital", "Physical", "UX", "User Research", "Design Thinking", "Internship"],
+    credit: " Image courtesy of Skydio ",
+    date: "2020",
   },
-  {
-    img: "https://material-ui.com/static/images/grid-list/bike.jpg",
-    title: "Bike",
-    author: "danfador"
-  }
 ];
 
 function Work(props) {
@@ -98,18 +99,10 @@ function Work(props) {
   return (
     <div className={classes.root}>
       <Grid container className={classes.grid}>
-      <ProjectCard />
+      {tileData.map(tile => (
+        <ProjectCard key={tile.img} image={tile.img} title={tile.title} date={tile.date} attributes={tile.attributes} credit={tile.credit}/>
+      ))}
       </Grid>
-      {/*}<Hidden>
-      <GridList cellHeight={160} className={classes.gridList} cols={3}>
-        {tileData.map(tile => (
-          <GridListTile key={tile.img} cols={tile.cols || 1}>
-            <img src={tile.img} alt={tile.title} />
-          </GridListTile>
-        ))}
-      </GridList>
-      </Hidden>*/}
-
     </div>
   );
 }
