@@ -13,6 +13,7 @@ import {
   AppBar,
   Toolbar,
   IconButton,
+  Chip,
 } from "@material-ui/core";
 import {
   Close,
@@ -34,12 +35,15 @@ const styles = theme => ({
     marginTop: "1rem"
   },
   gridList: {
+    display: 'flex',
     direction:"column",
+    justifyContent: "center",
+
   },
   pageTile: {
     flexGrow: 1,
     alignItems: "center",
-    justify: "center",
+    justifyContent: "center",
   },
   imageItem: {
     width: '100%',
@@ -94,7 +98,7 @@ function About(props) {
         </Typography>
       </Grid>
       <Grid item container md={4} sm={12} direction="column" className={classes.pageTile, classes.gridList}>
-      <Typography variant="h35" gutterBottom>
+      <Typography variant="h6" gutterBottom>
         seeking opportunities for fall 2021
       </Typography>
         <Button onClick={handleResumeClickOpen}>

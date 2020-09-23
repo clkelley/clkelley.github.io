@@ -8,7 +8,8 @@ import {
   CardMedia,
   Button,
   Typography,
-  Grid
+  Grid,
+  Chip
 } from '@material-ui/core'
 import {
   KeyboardArrowRight
@@ -37,9 +38,10 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: "column",
     flexGrow: 1,
-    justifyContent: "flex-end",
-    alignItems: "flex-end"
-  }
+    justifyContent: "space-between",
+    alignItems: "flex-end",
+    padding: "1rem",
+  },
 });
 
 function ProjectCard() {
@@ -59,21 +61,22 @@ function ProjectCard() {
           className={classes.cardImage}
           />
         </Grid>
-        <Grid item xs={6} flexDirection="column">
-          <CardContent className={classes.cardContent}>
+        <Grid item xs={6} className={classes.cardContent}>
             <Typography gutterBottom variant="h5" component="h2">
-              Lizard
+              LED Prom Dress
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p" align="right">
               Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
               across all continents except Antarctica
             </Typography>
+            <CardContent>
+              <Chip variant="outlined" size="small" label="Basic" />
+            </CardContent>
             <CardActions className={classes.cardButtons}>
               <Button size="small">
                 More <KeyboardArrowRight />
               </Button>
             </CardActions>
-          </CardContent>
         </Grid>
       </Grid>
     </Card>
