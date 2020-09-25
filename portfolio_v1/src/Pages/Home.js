@@ -32,6 +32,8 @@ function Home(props) {
   const { classes } = props;
   console.log(tileData);
 
+  const featuredTiles = tileData.filter(tile => tile.featured == true).sort((a, b) => parseInt(b.date) - parseInt(a.date));
+
   return (
     <div className={classes.root}>
       <Typography variant="h3" gutterBottom>
@@ -49,8 +51,8 @@ function Home(props) {
           description={tileData[8].description}
           index={tileData[8].index}*/}
           <ProjectCard
-            key={tileData[8].index}
-            tile={tileData[8]}
+            key={featuredTiles[0].index}
+            tile={featuredTiles[0]}
             />
         </Grid>
         <Grid sm={12} md={4} item>
@@ -59,17 +61,25 @@ function Home(props) {
         </Grid>
         <Grid sm={12} md={8} item>
           <ProjectCard
-            key={tileData[2].index}
-            tile={tileData[2]}
+            key={featuredTiles[1].index}
+            tile={featuredTiles[1]}
             />
         </Grid>
         <Grid sm={12} md={8} item>
           <ProjectCard
-            key={tileData[9].index}
-            tile={tileData[9]}
+            key={featuredTiles[2].index}
+            tile={featuredTiles[2]}
             />
         </Grid>
         <Grid sm={12} md={4} item>
+        </Grid>
+        <Grid sm={12} md={4} item>
+        </Grid>
+        <Grid sm={12} md={8} item>
+          <ProjectCard
+            key={featuredTiles[3].index}
+            tile={featuredTiles[3]}
+            />
         </Grid>
       </Grid>
     </div>

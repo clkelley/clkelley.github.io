@@ -90,7 +90,7 @@ function ProjectCard(props) {
               {props.tile.date}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p" align="right">
-              {props.tile.description}
+              {/*props.tile.description*/}
             </Typography>
             <CardContent>
               {props.tile.attributes.map(title => (
