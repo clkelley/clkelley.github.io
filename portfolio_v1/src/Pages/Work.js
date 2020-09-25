@@ -77,15 +77,18 @@ function Work(props) {
       ))}
       </Grid>
       <Grid container className={classes.grid}>
-      {filteredWorks.map(tile => (
+      {/*key={tile.img}
+      image={tile.img}
+      title={tile.title}
+      date={tile.date}
+      attributes={tile.attributes}
+      credit={tile.credit}
+      description={tile.description}
+      index={tile.index}*/}
+      {filteredWorks.sort((a, b) => parseInt(b.date) - parseInt(a.date)).map(tile => (
         <ProjectCard
-          key={tile.img}
-          image={tile.img}
-          title={tile.title}
-          date={tile.date}
-          attributes={tile.attributes}
-          credit={tile.credit}
-          description={tile.description}
+          key={tile.index}
+          tile={tile}
           chipCallback={handleChipClick}/>
       ))}
       </Grid>

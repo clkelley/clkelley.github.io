@@ -14,6 +14,12 @@ import {
 import {
   KeyboardArrowRight
 } from '@material-ui/icons';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link as RouterLink
+} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -68,26 +74,26 @@ function ProjectCard(props) {
           alt="Contemplative Reptile"
           width="100%"
           height="100%"
-          image={props.image}
+          image={props.tile.img}
           title="Contemplative Reptile"
           className={classes.cardImage}
           />
           <Typography variant="caption" className={classes.overlay}>
-            {props.credit ? props.credit : ""}
+            {props.tile.credit ? props.tile.credit : ""}
           </Typography>
         </Grid>
         <Grid item xs={6} className={classes.cardContent}>
             <Typography gutterBottom variant="h5" component="h2">
-              {props.title}
+              {props.tile.title}
             </Typography>
             <Typography variant="h6" color="textSecondary" component="p" align="right">
-              {props.date}
+              {props.tile.date}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p" align="right">
-              {props.description}
+              {props.tile.description}
             </Typography>
             <CardContent>
-              {props.attributes.map(title => (
+              {props.tile.attributes.map(title => (
               <Chip
                 variant="outlined"
                 size="small"
@@ -98,8 +104,8 @@ function ProjectCard(props) {
               ))}
             </CardContent>
             <CardActions className={classes.cardButtons}>
-              <Button size="small">
-                More <KeyboardArrowRight />
+              <Button size="small" component={RouterLink} to={"/project/"+ props.tile.index}>
+                More {props.tile.index} <KeyboardArrowRight />
               </Button>
             </CardActions>
         </Grid>

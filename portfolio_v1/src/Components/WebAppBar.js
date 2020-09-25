@@ -25,6 +25,7 @@ import {
 import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Work from "../Pages/Work";
+import ProjectInfo from "../Pages/ProjectInfo"
 import { createBrowserHistory } from "history";
 
 
@@ -135,6 +136,7 @@ function WebAppBar(){
         <Route exact path="/" component={Home} />
         <Route path="/work" component={Work} />
         <Route path="/about" component={About} />
+        <Route path="/project/:index" component={ProjectInfo} />
       </main>
       </Router>
       </React.Fragment>

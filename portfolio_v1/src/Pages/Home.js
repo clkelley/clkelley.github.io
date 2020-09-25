@@ -39,14 +39,19 @@ function Home(props) {
       </Typography>
       <Grid container>
         <Grid sm={12} md={8} item>
+
+          {/*key={tileData[8].img}
+          image={tileData[8].img}
+          title={tileData[8].title}
+          date={tileData[8].date}
+          attributes={tileData[8].attributes}
+          credit={tileData[8].credit}
+          description={tileData[8].description}
+          index={tileData[8].index}*/}
           <ProjectCard
-            key={tileData[8].img}
-            image={tileData[8].img}
-            title={tileData[8].title}
-            date={tileData[8].date}
-            attributes={tileData[8].attributes}
-            credit={tileData[8].credit}
-            description={tileData[8].description}/>
+            key={tileData[8].index}
+            tile={tileData[8]}
+            />
         </Grid>
         <Grid sm={12} md={4} item>
         </Grid>
@@ -54,23 +59,15 @@ function Home(props) {
         </Grid>
         <Grid sm={12} md={8} item>
           <ProjectCard
-            key={tileData[2].img}
-            image={tileData[2].img}
-            title={tileData[2].title}
-            date={tileData[2].date}
-            attributes={tileData[2].attributes}
-            credit={tileData[2].credit}
-            description={tileData[2].description}/>
+            key={tileData[2].index}
+            tile={tileData[2]}
+            />
         </Grid>
         <Grid sm={12} md={8} item>
           <ProjectCard
-            key={tileData[9].img}
-            image={tileData[9].img}
-            title={tileData[9].title}
-            date={tileData[9].date}
-            attributes={tileData[9].attributes}
-            credit={tileData[9].credit}
-            description={tileData[9].description}/>
+            key={tileData[9].index}
+            tile={tileData[9]}
+            />
         </Grid>
         <Grid sm={12} md={4} item>
         </Grid>
