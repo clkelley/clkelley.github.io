@@ -105,7 +105,7 @@ function ProjectCard(props) {
             </CardContent>
             <CardActions className={classes.cardButtons}>
               <Button size="small" component={RouterLink} to={"/project/"+ props.tile.index}>
-                More {props.tile.index} <KeyboardArrowRight />
+                More <KeyboardArrowRight />
               </Button>
             </CardActions>
         </Grid>
