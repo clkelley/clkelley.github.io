@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import PropTypes from "prop-types";
 import {
   withStyles,
@@ -32,12 +32,15 @@ function Home(props) {
   const { classes } = props;
   console.log(tileData);
 
+  const [hover, setHover] = useState(false);
+
+
   const featuredTiles = tileData.filter(tile => tile.featured == true).sort((a, b) => parseInt(b.date) - parseInt(a.date));
 
   return (
     <div className={classes.root}>
-      <Typography variant="h3" gutterBottom>
-        digital/physical interaction designer
+      <Typography variant="h3" gutterBottom onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+        {hover ? "physical/digital" : "digital/physical"  } interaction designer
       </Typography>
       <Grid container>
         <Grid sm={12} md={8} item>

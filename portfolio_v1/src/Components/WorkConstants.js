@@ -69,7 +69,7 @@ const tileData = [
     img: "/images/x2_in_use.png",
     index: 8,
     title: "Skydio Software Engineering",
-    attributes: ["Digital", "Physical", "Android", "Open Source", "Full Stack Development", "Internship", "Qt", "Python", "C++"],
+    attributes: ["Digital", "Physical", "Android", "Open Source", "Full Stack", "Internship", "Qt", "Python", "C++"],
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
     credit: " Image courtesy of Skydio ",
     date: "2019",
@@ -188,6 +188,14 @@ const tileData = [
     date: "2020",
     credit:"Image courtesy of Vincent Nicandro",
     website:"https://medium.com/serious-games-377g/developing-incarceration-a6c8cfa2dea3"
+  },
+  {
+    img:"/images/bird necklace.png",
+    index: 22,
+    title: "Bird Necklace Lost Wax Casting",
+    attributes: ["Physical", "Art", "Class"],
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
+    date: "2018",
   }
 ];
 

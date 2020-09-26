@@ -38,12 +38,12 @@ const styles = theme => ({
     display: 'flex',
     direction:"column",
     justifyContent: "center",
-
   },
   pageTile: {
     flexGrow: 1,
     alignItems: "center",
     justifyContent: "center",
+    paddingBottom: "10rem"
   },
   imageItem: {
     width: '100%',
@@ -93,14 +93,14 @@ function About(props) {
         </Paper>
       </Grid>
       <Grid item  md={4} sm={12} className={classes.pageTile}>
-        <Typography variant="h3" gutterBottom>
+        <Typography variant="h4" gutterBottom>
           about me
         </Typography>
       </Grid>
       <Grid item container md={4} sm={12} direction="column" className={classes.pageTile, classes.gridList}>
-      <Typography variant="h6" gutterBottom>
-        seeking opportunities for fall 2021
-      </Typography>
+        <Typography variant="h6" gutterBottom>
+          seeking opportunities for fall 2021
+        </Typography>
         <Button onClick={handleResumeClickOpen}>
           Open Resume
         </Button>

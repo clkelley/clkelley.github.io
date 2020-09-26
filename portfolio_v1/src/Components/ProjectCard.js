@@ -68,7 +68,7 @@ function ProjectCard(props) {
   return (
     <Card className={classes.root} variant="outlined">
       <Grid container className={classes.mainGrid}>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <CardMedia
           component="img"
           alt="Contemplative Reptile"
@@ -82,7 +82,7 @@ function ProjectCard(props) {
             {props.tile.credit ? props.tile.credit : ""}
           </Typography>
         </Grid>
-        <Grid item xs={6} className={classes.cardContent}>
+        <Grid item xs={12} sm={6} className={classes.cardContent}>
             <Typography gutterBottom variant="h5" component="h2">
               {props.tile.title}
             </Typography>

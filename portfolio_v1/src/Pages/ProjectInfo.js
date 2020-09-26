@@ -41,13 +41,16 @@ function ProjectInfo(props) {
       <Grid container>
         <Grid sm={12} md={6} item>
         <GridList>
-        <GridListTile key={thisTile.index}>
+          <GridListTile key={thisTile.index}>
           <img src={thisTile.img} alt={"test"} />
           </GridListTile>
         </GridList>
         </Grid>
         <Grid sm={12} md={6} item>
-          {thisTile.description}
+          <Typography variant="body2">
+            {thisTile.description}
+          </Typography>
+
         </Grid>
       </Grid>
     </div>
