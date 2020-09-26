@@ -40,7 +40,7 @@ function Home(props) {
   return (
     <div className={classes.root}>
       <Typography variant="h3" gutterBottom onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
-        {hover ? "physical/digital" : "digital/physical"  } interaction designer
+        {hover ? "physical/digital" : "digital/physical"  } interaction engineer
       </Typography>
       <Grid container>
         <Grid sm={12} md={8} item>

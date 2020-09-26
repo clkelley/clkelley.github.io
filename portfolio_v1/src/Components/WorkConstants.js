@@ -23,7 +23,8 @@ const tileData = [
     date: "2018",
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
     attributes: ["Digital","Team", "React", "Firebase", "iOS", "Android", "UX", "UI", "Mobile Application","Design Thinking", "User Research", "Prototyping", "User Testing", "Class Project"],
-    featured: true
+    featured: true,
+    website: "https://hci.stanford.edu/courses/cs147/2018/au/projects/TransformingLivingSpace/Sprite/"
   },
   {
     img: "/images/rendezvous_browser.png",
@@ -102,6 +103,7 @@ const tileData = [
     credit: " Image courtesy of Russel Kao ",
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
     date: "2018",
+    website: "https://stanforduav.org/"
   },
   {
     img: "/images/archery_team.JPG",
@@ -111,6 +113,7 @@ const tileData = [
     credit: " Image courtesy of Jeff Zhang ",
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
     date: "2020",
+    website: "http://archery.stanford.edu/"
   },
   {
     img: "/images/coral compass.JPG",
@@ -161,6 +164,7 @@ const tileData = [
     attributes: ["Physical", "Digital", "Team", "Figma", "UI", "UX", "User Research", "Class"],
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
     date: "2020",
+    website: "https://medium.com/serious-games-377g/git-done-game-design-and-iteration-d9c9ca569b2b"
   },
   {
     img: "/images/commute.jpg",
@@ -170,6 +174,7 @@ const tileData = [
     credit: "Image Courtesy of Marzamemi Project",
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
     date: "2017",
+    website: "https://marzamemi.stanford.edu/",
   },
   {
     img: "/images/teapot.jpg",

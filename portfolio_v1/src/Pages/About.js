@@ -37,13 +37,13 @@ const styles = theme => ({
   gridList: {
     display: 'flex',
     direction:"column",
-    justifyContent: "center",
+    justifyContent: "flex-end",
   },
   pageTile: {
     flexGrow: 1,
     alignItems: "center",
     justifyContent: "center",
-    paddingBottom: "10rem"
+    paddingBottom: "1rem"
   },
   imageItem: {
     width: '100%',
@@ -96,17 +96,26 @@ function About(props) {
         <Typography variant="h4" gutterBottom>
           about me
         </Typography>
-      </Grid>
-      <Grid item container md={4} sm={12} direction="column" className={classes.pageTile, classes.gridList}>
-        <Typography variant="h6" gutterBottom>
-          seeking opportunities for fall 2021
+        <Typography variant="body2" paragraph="true" align="left">
+          Hi! I'm a Master's Student at Stanford University studying Computer Science with a concentration in Human-Computer Interaction. I've loved making things for as long as I can remember.
         </Typography>
+        <Typography variant="body2" paragraph="true" align="left">
+          I have a passion for how people interact with technology in the physical world. I do work in mechanical and electrical engineering designing circuits and building robots, but I mostly write software and design interfaces for people to interact with their screens.
+        </Typography>
+        <Typography variant="body2" paragraph="true" align="left">
+          This website (built in React using Material UI) is full of projects I've developed and work experience from my undergraduate years also at Stanford. I'd be delighted to answer any questions - my email is listed at the top of my resume. Happy exploring!
+        </Typography>
+      </Grid>
+      <Grid item container md={4} sm={12} direction="column" className={classes.pageTile, classes.gridList} styles={{alignItems: "flex-start"}}>
         <Button onClick={handleResumeClickOpen}>
           Open Resume
         </Button>
         <Button href={resume} download>
           Download Resume <GetApp />
         </Button>
+        <Typography variant="h6" gutterBottom>
+          seeking opportunities for fall 2021
+        </Typography>
       </Grid>
       </Grid>
       <Dialog fullScreen open={resumeOpen} onClose={handleResumeClose} TransitionComponent={Transition}>

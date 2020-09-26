@@ -46,7 +46,13 @@ const theme = createMuiTheme({
       lineHeight: 1.5,
       letterSpacing: "0.02857em",
     },
+    body2: {
+      margin: "1rem"
+    }
 
+  },
+  shape: {
+    borderRadius: 0
   }
 });
 

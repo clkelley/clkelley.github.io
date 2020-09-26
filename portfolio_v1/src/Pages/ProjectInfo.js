@@ -6,7 +6,13 @@ import {
   GridList,
   GridListTile,
   Typography,
+  Hidden,
+  Link,
+  Button,
 } from "@material-ui/core";
+import {
+  KeyboardArrowRight
+} from '@material-ui/icons';
 
 import tileData from "../Components/WorkConstants.js"
 
@@ -47,10 +53,14 @@ function ProjectInfo(props) {
         </GridList>
         </Grid>
         <Grid sm={12} md={6} item>
-          <Typography variant="body2">
+          <Typography variant="body2" align="left">
             {thisTile.description}
           </Typography>
-
+          <Typography align="right" margin="1rem">
+          {thisTile.website && <Button size="small" href={thisTile.website ? thisTile.website : "#"}>
+            Website <KeyboardArrowRight />
+          </Button>}
+          </Typography>
         </Grid>
       </Grid>
     </div>

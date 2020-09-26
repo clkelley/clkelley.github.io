@@ -18,6 +18,7 @@ import {
   ListItemText,
   makeStyles,
   Hidden,
+  Link
 } from "@material-ui/core";
 import {
   Menu as MenuIcon
@@ -40,6 +41,8 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(2),
   },
   title: {
+    textDecoration: 'none',
+    color: 'black',
     flexGrow: 1,
     [theme.breakpoints.up('xs')]: {
       textAlign: 'left',
@@ -115,8 +118,10 @@ function WebAppBar(){
             <MenuIcon />
           </IconButton>
           </Hidden>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h6" color="black" underline="none" className={classes.title} >
+            <RouterLink to="/" className={classes.title}>
             Clara Kelley
+            </RouterLink>
           </Typography>
           <Hidden xsDown>
           <Button color="inherit" className={classes.navButton} component={RouterLink} to="/">Explore</Button>

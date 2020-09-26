@@ -24,12 +24,14 @@ import {
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    position: 'relative',
   },
   mainGrid: {
     display: 'flex',
     flexGrow: 1,
     flexDirection: 'row'
+  },
+  gridItemMedia: {
+    position: 'relative',
   },
   cardButtons: {
     display: 'flex',
@@ -39,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cardImage: {
     flexGrow: 1,
-    backgroundSize: "cover"
+    backgroundSize: "cover",
   },
   cardContent: {
     display: 'flex',
@@ -68,14 +70,13 @@ function ProjectCard(props) {
   return (
     <Card className={classes.root} variant="outlined">
       <Grid container className={classes.mainGrid}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6} className={classes.gridItemMedia}>
           <CardMedia
           component="img"
-          alt="Contemplative Reptile"
+          alt={props.tile.main_img_alt}
           width="100%"
           height="100%"
           image={props.tile.img}
-          title="Contemplative Reptile"
           className={classes.cardImage}
           />
           <Typography variant="caption" className={classes.overlay}>
