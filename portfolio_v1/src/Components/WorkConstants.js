@@ -146,7 +146,7 @@ const tileData = [
     index: 16,
     title: "Sumo Robot",
     attributes: ["Digital", "Physical", "Embedded", "C", "Mechanical Engineering", "Electrical Engineering", "Team", "Class Project"],
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
+    description:"I worked on a team of four to build this robot which is designed to fight in a pie sumo battle against two other robots for who can take up the most space. The robot drives up to the center of the circle and extends two linear actuators into the moving walls, planting itself on its back brake. This project involved mechanical, electrical, and computational engineering to work. It was wicked fun.",
     date: "2020",
   },
   {
@@ -154,7 +154,7 @@ const tileData = [
     index: 17,
     title: "WhatsNext MIT COVID-19 Hackathon Project",
     attributes: ["Digital", "Team", "Figma", "UI", "UX", "User Research"],
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
+    description:"During the start of the COVID-19 pandemic, I was invited to join group of friends at the first of MIT's COVID-19 themed hackathons. We developed a re-design that we hoped would help those who are immune compromised get assistance from their neighbors and connect communities otherwise distrupted by the pandemic. Our solution won in our category, and we continued our efforts by conducting user research to better understand young people and their community engagement in this time. The results are summarized in an article to be released later this year.",
     date: "2020",
   },
   {
@@ -162,7 +162,7 @@ const tileData = [
     index: 18,
     title: "Git S--- Done Board Game",
     attributes: ["Physical", "Digital", "Team", "Figma", "UI", "UX", "User Research", "Class Project"],
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
+    description:"My team of three tackled building a board game to teach early computer scientists about good version control practices. Through brainstorms, playtest, and prototypes, we designed a game we're proud of. The final game is ready-to-ship quality with a custom white-erase mat.",
     date: "2020",
     website: "https://medium.com/serious-games-377g/git-done-game-design-and-iteration-d9c9ca569b2b"
   },
@@ -172,7 +172,7 @@ const tileData = [
     title: "Archaeology Intern - Marzamemi Maritime Heritage Project",
     attributes: ["Physical", "Digital", "Team", "Internship"],
     credit: "Image Courtesy of Marzamemi Project",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
+    description:"Freshman year I took a leap of faith and tried out underwater archaeology. In this 6-week field school I learned a ton about teamwork, documentation, and dedication. In the end, my computer science background allowed me to automate a process that the team had been struggling with for years. It was a wonderful aha! moment. ",
     date: "2017",
     website: "https://marzamemi.stanford.edu/",
   },
@@ -181,7 +181,7 @@ const tileData = [
     index: 20,
     title: "Ceramics",
     attributes: ["Physical", "Art"],
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
+    description:"In my gap year between high school and college I picked up throwing, a discipline in ceramics. I was able to continue this at Stanford where I learned to make teapots and multiples (identical cups or bowls). My home is full of ceramic failures, but what I love about this art is that every piece is still functional.",
     date: "2018",
   },
   {
@@ -189,7 +189,7 @@ const tileData = [
     index: 21,
     title: "INCarceration Serious Card Game",
     attributes: ["Digital", "Physical", "UI", "UX", "User Research", "Art", "Class Project"],
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
+    description:"The class Serious Games was about taking serious topics and finding a way to communicate them through games. My team chose to focus on the prison-industrial complex and the many stakeholders in what has become a uniquely American problem. Through iterations and playtests we created a game that could be just the tip of the iceberg of a new way to explain the impact of this issue on our society.",
     date: "2020",
     credit:"Image courtesy of Vincent Nicandro",
     website:"https://medium.com/serious-games-377g/developing-incarceration-a6c8cfa2dea3"
@@ -199,7 +199,7 @@ const tileData = [
     index: 22,
     title: "Bird Necklace Lost Wax Casting",
     attributes: ["Physical", "Art", "Class Project"],
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
+    description:"I got the unique opportunity to learn silversmithing from professional jewelers. This piece using the lost-wax casting technique is inspired by a baby mobile - each chain connected to a rotating branch can make the bird flap its wings. The piece can also be worn as a necklace with the center chain removed.",
     date: "2018",
   }
 ];
