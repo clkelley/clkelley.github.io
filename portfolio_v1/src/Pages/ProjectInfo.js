@@ -47,6 +47,9 @@ const styles = theme => ({
     flexGrow: 1,
     backgroundSize: "cover",
   },
+  chipStyle:{
+    margin: "0.25rem",
+  },
 });
 
 function ProjectInfo(props) {
@@ -101,6 +104,19 @@ function ProjectInfo(props) {
             Website <KeyboardArrowRight />
           </Button>}
           </Typography>
+        </Grid>
+        <Grid item xs={12}>
+        {thisTile.attributes.map(title => (
+        <Chip
+          variant="outlined"
+          size="small"
+          key={title}
+          label={title}
+          className={classes.chipStyle}
+          component="a"
+          href={"/work/"+title} 
+          clickable/>
+        ))}
         </Grid>
       </Grid>
       <Dialog open={imageOpen} onClose={handleImageClose}>

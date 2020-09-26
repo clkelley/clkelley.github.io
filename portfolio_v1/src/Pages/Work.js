@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import PropTypes from "prop-types";
 import {
   withStyles,
@@ -36,8 +36,13 @@ const styles = theme => ({
 function Work(props) {
   const { classes } = props;
 
-  const [chiplist, setChipList] = useState([]);
-  const [filteredWorks, setFilteredWorks] = useState(tileData);
+  const startFilter = props.match.params.filter ? props.match.params.filter : "Main Project";
+
+  const [chiplist, setChipList] = useState([startFilter]);
+
+  const initFilteredWorks = tileData.filter((tile) => tile.attributes.includes(startFilter));
+
+  const [filteredWorks, setFilteredWorks] = useState(initFilteredWorks);
 
   const handleChipClick = (chipName) => {
     if(chiplist.includes(chipName)){

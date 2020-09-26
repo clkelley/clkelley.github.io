@@ -19,6 +19,7 @@ import {
   Close,
   GetApp
 } from '@material-ui/icons';
+import { spacing } from '@material-ui/system';
 import { Document, Page, pdfjs} from 'react-pdf';
 import resume from '../Files/Resume.pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -90,18 +91,19 @@ const styles = theme => ({
     overflow: "hidden",
     backgroundColor: theme.palette.background.paper,
     flexGrow: 1,
-    marginTop: "1rem"
+    marginTop: "1rem",
   },
   gridList: {
     display: 'flex',
     direction:"column",
     justifyContent: "flex-end",
+    paddingLeft: '1rem'
   },
   pageTile: {
     flexGrow: 1,
     alignItems: "center",
     justifyContent: "center",
-    paddingBottom: "1rem"
+    paddingBottom: "1rem",
   },
   imageItem: {
     width: '100%',
@@ -157,7 +159,7 @@ function About(props) {
           Hi! I'm a Master's Student at Stanford University studying Computer Science with a concentration in Human-Computer Interaction. I've loved making things for as long as I can remember.
         </Typography>
         <Typography variant="body2" paragraph="true" align="left">
-          I have a passion for how people interact with technology in the physical world. I do work in mechanical and electrical engineering building robots and wiring circuits, but I mostly write software and design interfaces for people to interact with their screens.
+          I have a passion for how people interact with technology in the physical world. I do work in mechanical and electrical engineering building robots and wiring circuits, but I mostly write software and design interfaces to solve problems.
         </Typography>
         <Typography variant="body2" paragraph="true" align="left">
           This website (built in React using Material UI) is full of projects I've developed and work experience from my undergraduate years also at Stanford. I'd be delighted to answer any questions - my email is listed at the top of my resume. Happy exploring!

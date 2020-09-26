@@ -139,7 +139,8 @@ function WebAppBar(){
       />
       <main className={classes.content}>
         <Route exact path="/" component={Home} />
-        <Route path="/work" component={Work} />
+        <Route path="/work/:filter" component={Work} />
+        <Route exact path="/work" component={Work} />
         <Route path="/about" component={About} />
         <Route path="/project/:index" component={ProjectInfo} />
       </main>
