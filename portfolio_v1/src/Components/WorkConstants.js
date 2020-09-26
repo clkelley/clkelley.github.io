@@ -4,7 +4,7 @@ const tileData = [
     title: "LED Shirt / Prom Dress",
     date: "2015",
     attributes: ["Physical", "Digital", "iOS", "Android", "Embedded", "Mechanical Engineering", "Electrical Engineering"],
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
+    description: "In 2011 I fell in love with fashion tech, inspired by designers like Hussein Chalayan and CuteCircuit. I became determined to create the interactive wearable art of my dreams and with the help of mentors and family built several prototypes, the last of which I wore to Senior Prom in 2015. The project includes an iOS application in Objective C, an Android application in Java, a wearable control hub with a custom PCB and bluetooth capability inside a lasercut enclosure with heatsink, and a set of modular fashion pieces to which the controlled LED strips can be attached. I'm incredibly proud of the breadth of skills I acquired while working on this project, though I would do it completely differently if I was to do it again.",
     featured: true,
     index: 0,
   },
@@ -13,7 +13,7 @@ const tileData = [
     index: 1,
     title: "Mechanical Wings (Costume)",
     attributes: ["Physical", "Mechanical Design", "Art", "Class Project"],
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
+    description: "During my gap year I got the opportunity to attend Comic Con International in San Diego. I knew that I wanted to build a costume for the exhibition, but I wanted to make something that was both super visible and very wearable during the multi-day event going through doors. Following the guidance of online tutorials and the assistance of family, these mechanical wings were build out of light wood and machine screws with feathers made of zipties and butcher paper. Getting the mechanism weighted just right so that it was bistable (open and closed) was a serious challenge, but the final effect was truly worth it.",
     date: "2016"
   },
   {
@@ -21,7 +21,7 @@ const tileData = [
     index: 2,
     title: "Sprite",
     date: "2018",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
+    description:"In my HCI Studio course, I worked on a team of 4 to identify a need in the living space experience and design and build a solution. Through user interviews we discovered many smart home devices are barely used except for simple tasks. After evaluating and iterating on prototypes from playacting to wireframes, I built out our cross-platform mobile app solution in React Native using Expo. Our team was voted best demonstration by industry professionals attending the final session.",
     attributes: ["Digital","Team", "React", "Firebase", "iOS", "Android", "UX", "UI", "Mobile Application","Design Thinking", "User Research", "Prototyping", "User Testing", "Class Project"],
     featured: true,
     website: "https://hci.stanford.edu/courses/cs147/2018/au/projects/TransformingLivingSpace/Sprite/"
@@ -31,7 +31,7 @@ const tileData = [
     index: 3,
     title: "Rendezvous Web Platform",
     date: "2020",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
+    description:"For my senior capstone project I worked on a team of five to create a mini-startup in an area of our interest. At the time, we were thinking about where we would be in six months, all new graduates living in new cities wanting to meet interesting people. Together we designed, built, and tested an event platform for connecting people to events that they enjoy and people they might enjoy them with. The website was built in React with a Firebase backend, and used a custom AI algorithm and Google Cloud Functions to identify optimal event groups.",
     attributes: ["Digital","Team", "React", "Firebase", "UX", "Web Application", "Class Project"],
   },
   {
@@ -39,7 +39,7 @@ const tileData = [
     index: 4,
     title: "Redesign: Glassdoor Mobile",
     date: "2019",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
+    description:"Our team of three was tasked with understanding student issues in the job hunting process by redesigning Glassdoor's mobile application. Through user testing we identified an exploratory behavior of young students interested in adjacent industries and titles not well suited for current filters. We built and tested experience, low-fidelity, and medium-fidelity prototypes to solve this problem, culminating in a clickable protoytpe demonstrating our final galaxy-inspired solution.",
     attributes: ["Digital","Team", "UX", "UI", "Figma", "Prototyping", "Class Project"],
   },
   {
@@ -47,7 +47,7 @@ const tileData = [
     index: 5,
     title: "Bow Stand",
     date: "2018",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
+    description:"In Design for Manufacturing I got the opportunity to learn how our everyday objects are made with hands-on experience with milling, lathing, and finishing tools. For the final project I chose to make an archer's bow stand. Inspired by tent poles, each leg of the stand collapses for easy storage and snaps in to place when released. I got to a first version of the central component relatively quickly, but was able to improve the design and machine a new piece twice more before the final delivery, leading to a perfect fit.",
     attributes: ["Physical", "Manufacturing", "Prototyping", "Design Thinking", "Class Project"],
   },
   {
@@ -138,7 +138,7 @@ const tileData = [
     index: 15,
     title: "Mind-Controlled Wings",
     attributes: ["Digital", "Physical", "Embedded", "Mechanical Engineering", "Electrical Engineering", "Art", "Class"],
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor finibus ligula, vel gravida est rhoncus et. Phasellus feugiat lectus elementum egestas fringilla. Suspendisse ultricies nunc at enim dictum fermentum. Ut vehicula, augue ac commodo ornare, magna leo fringilla diam, eget ullamcorper ex neque vel mauris.",
+    description:"I was fortunate enough to be able to take a class on invention in high school. We got to play with all kinds of really interesting devices, but I was particularly fascinated by the brain interface possibilites of the early MindWave headset. I wanted the piece to be able to show a user's inner thoughts on the outside, so I built an accompanying set of wings using a microcontroller and small servo motors. My friends quite loved the whimsical nature of the project.",
     date: "2014",
   },
   {

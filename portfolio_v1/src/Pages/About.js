@@ -23,6 +23,64 @@ import { Document, Page, pdfjs} from 'react-pdf';
 import resume from '../Files/Resume.pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
+const classwork_chips = [
+    "Vector Calculus for Engineers",
+    "Data Science 101",
+    "Electricity and Magnetism",
+    "Intro to Solid Mechanics",
+    "Mathematical Foundations of Computing",
+    "Computer Systems from the Ground Up",
+    "Cross-Platform Mobile Development",
+    "Design and Analysis of Algorithms",
+    "Computers, Ethics, and Public Policy",
+    "Web Applications",
+    "iOS Application Development",
+    "Introduction to Computer Graphics and Imaging",
+    "Artificial Intelligence: Principles and Techniques",
+    "Introduction to Mechatronics",
+    ];
+
+const design_classwork_chips = [
+  "Learn to Intervene, Wisely",
+  "Human-Computer Interaction Seminar",
+  "Design and Manufacturing",
+  "Design for Silver and Bronze",
+  "Human-Computer Interaction Design Studio",
+  "Computer-Aided Product Creation",
+  "Designing Serious Games",
+  "Introduction to Social Psychology",
+  "Social Computing",
+  "Graduate Design Research Techniques"
+];
+
+const other_classwork_chips =[
+  "Empathy",
+  "Physics - Mechanics",
+  "Ordinary Differential Calculus for Engineers",
+  "Writing 1: Imagining Technology: The Rhetoric of Humans and Machines",
+  "The American West",
+  "Programming Abstractions",
+  "Chemical Principles Accelerated",
+  "Physics - Light and Heat",
+  "Writing 2: Language Gone Viral: The Rhetoric of Social Media",
+  "Intro to Probability for Computer Scientists",
+  "Fiction Writing",
+  "Principles of Computer Systems",
+  "Introduction to Human-Computer Interaction Design",
+  "Intro to Making: What is EE",
+  "Object-Oriented Systems Design",
+  "Electrical Engineering Instruction",
+  "Mechanics of Materials",
+  "Introduction to Psychology",
+  "Ten Things: An Archaeology of Design",
+  "Social Dance 1",
+  "Italian Cooking",
+  "Software Project",
+  "Introduction to Financial Decision-Making",
+  "Data Visualization",
+  "The Modern Algorithmic Toolbox",
+  "Video Game Development in C++ and Unreal",
+];
 
 const styles = theme => ({
   root: {
@@ -65,7 +123,10 @@ const styles = theme => ({
     justifyContent: "space-around",
     overflow: "scroll",
     flexGrow: 1
-  }
+  },
+  chipStyle:{
+    margin: "0.25rem",
+  },
 });
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -87,11 +148,7 @@ function About(props) {
   return (
     <div>
       <Grid container className={classes.root}>
-      <Grid item md={4} sm={12} className={classes.pageTile}>
-        <Paper>
-        <img className={classes.imageItem} src="/images/fullbody_portrait.JPG" alt="Image of Clara in white dress and red stole in front of Hoover tower" />
-        </Paper>
-      </Grid>
+
       <Grid item  md={4} sm={12} className={classes.pageTile}>
         <Typography variant="h4" gutterBottom>
           about me
@@ -105,17 +162,49 @@ function About(props) {
         <Typography variant="body2" paragraph="true" align="left">
           This website (built in React using Material UI) is full of projects I've developed and work experience from my undergraduate years also at Stanford. I'd be delighted to answer any questions - my email is listed at the top of my resume. Happy exploring!
         </Typography>
-      </Grid>
-      <Grid item container md={4} sm={12} direction="column" className={classes.pageTile, classes.gridList} styles={{alignItems: "flex-start"}}>
+        <Typography variant="h6" gutterBottom>
+          seeking opportunities for fall 2021
+        </Typography>
         <Button onClick={handleResumeClickOpen}>
           Open Resume
         </Button>
         <Button href={resume} download>
           Download Resume <GetApp />
         </Button>
+      </Grid>
+      <Grid item md={4} sm={12} className={classes.pageTile}>
+        <Paper>
+        <img className={classes.imageItem} src="/images/fullbody_portrait.JPG" alt="Image of Clara in white dress and red stole in front of Hoover tower" />
+        </Paper>
+      </Grid>
+      <Grid item container md={4} sm={12} direction="column" className={classes.pageTile, classes.gridList} styles={{alignItems: "flex-start"}}>
         <Typography variant="h6" gutterBottom>
-          seeking opportunities for fall 2021
+        classwork in design
         </Typography>
+        <Grid item container>
+        {design_classwork_chips.map(title => (
+        <Chip
+          variant="outlined"
+          size="small"
+          key={title}
+          label={title}
+          className={classes.chipStyle}/>
+        ))}
+        </Grid>
+        <Typography variant="h6" gutterBottom>
+        classwork in engineering
+        </Typography>
+        <Grid item container>
+        {classwork_chips.map(title => (
+        <Chip
+          variant="outlined"
+          size="small"
+          key={title}
+          label={title}
+          className={classes.chipStyle}/>
+        ))}
+        </Grid>
+
       </Grid>
       </Grid>
       <Dialog fullScreen open={resumeOpen} onClose={handleResumeClose} TransitionComponent={Transition}>
