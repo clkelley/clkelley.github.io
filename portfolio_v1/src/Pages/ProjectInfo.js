@@ -50,6 +50,9 @@ const styles = theme => ({
   chipStyle:{
     margin: "0.25rem",
   },
+  imageTile:{
+    cursor: "pointer",
+  }
 });
 
 function ProjectInfo(props) {
@@ -79,20 +82,10 @@ function ProjectInfo(props) {
       <Grid container>
         <Grid sm={12} md={6} item>
         <GridList>
-          <GridListTile key={thisTile.index}>
-          <img src={thisTile.img} alt={"test"} />
-          <GridListTileBar
-              title=""
-              titlePosition="top"
-              actionIcon={
-                <IconButton styles={{color:"black"}} onClick={() => handleImageClickOpen(thisTile.img)}>
-                  <ZoomIn />
-                </IconButton>
-              }
-              actionPosition="right"
-              className={classes.titleBar}
-          />
-          </GridListTile>
+          {thisTile.images.map(name =>
+          <GridListTile key={name} onClick={() => handleImageClickOpen("/images/" + thisTile.imageFolder + "/" + name)} className={classes.imageTile}>
+          <img src={"/images/" + thisTile.imageFolder + "/" + name} alt={"test"} />
+          </GridListTile>)}
         </GridList>
         </Grid>
         <Grid sm={12} md={6} item>
@@ -104,19 +97,17 @@ function ProjectInfo(props) {
             Website <KeyboardArrowRight />
           </Button>}
           </Typography>
-        </Grid>
-        <Grid item xs={12}>
-        {thisTile.attributes.map(title => (
-        <Chip
-          variant="outlined"
-          size="small"
-          key={title}
-          label={title}
-          className={classes.chipStyle}
-          component="a"
-          href={"/work/"+title} 
-          clickable/>
-        ))}
+          {thisTile.attributes.map(title => (
+          <Chip
+            variant="outlined"
+            size="small"
+            key={title}
+            label={title}
+            className={classes.chipStyle}
+            component="a"
+            href={"/work/"+title}
+            clickable/>
+          ))}
         </Grid>
       </Grid>
       <Dialog open={imageOpen} onClose={handleImageClose}>

@@ -7,6 +7,16 @@ const tileData = [
     description: "In 2011 I fell in love with fashion tech, inspired by designers like Hussein Chalayan and CuteCircuit. I became determined to create the interactive wearable art of my dreams and with the help of mentors and family built several prototypes, the last of which I wore to Senior Prom in 2015. The project includes an iOS application in Objective C, an Android application in Java, a wearable control hub with a custom PCB and bluetooth capability inside a lasercut enclosure with heatsink, and a set of modular fashion pieces to which the controlled LED strips can be attached. I'm incredibly proud of the breadth of skills I acquired while working on this project, though I would do it completely differently if I was to do it again.",
     featured: true,
     index: 0,
+    images:["circuit.png",
+            "lightbeat casing.jpg",
+            "lightbeat equalizer.gif",
+            "lightbeat in progress.jpg",
+            "lightbeat prom.jpg",
+            "lightbeat_original_logo_2012.jpg",
+            "me_with_dress.jpg",
+            "pcb.png",
+            "rough_prototype.jpg"],
+    imageFolder: "0-led_shirt"
   },
   {
     img: "/images/angel_cutout.png",
@@ -14,7 +24,14 @@ const tileData = [
     title: "Mechanical Wings (Costume)",
     attributes: ["Physical", "Mechanical Design", "Art"],
     description: "During my gap year I got the opportunity to attend Comic Con International in San Diego. I knew that I wanted to build a costume for the exhibition, but I wanted to make something that was both super visible and very wearable during the multi-day event going through doors. Following the guidance of online tutorials and the assistance of family, these mechanical wings were build out of light wood and machine screws with feathers made of zipties and butcher paper. Getting the mechanism weighted just right so that it was bistable (open and closed) was a serious challenge, but the final effect was truly worth it.",
-    date: "2016"
+    date: "2016",
+    imageFolder:"1-comicon_wings",
+    images:["angel in progress flat.jpg",
+            "angel in progress.jpg",
+            "angel.jpg",
+            "blank feathers.jpg",
+            "wings.gif",
+            "with swirls.jpg"]
   },
   {
     img: "/images/sprite_iphone.png",
@@ -24,7 +41,14 @@ const tileData = [
     description:"In my HCI Studio course, I worked on a team of 4 to identify a need in the living space experience and design and build a solution. Through user interviews we discovered many smart home devices are barely used except for simple tasks. After evaluating and iterating on prototypes from playacting to wireframes, I built out our cross-platform mobile app solution in React Native using Expo. Our team was voted best demonstration by industry professionals attending the final session.",
     attributes: ["Digital","Team", "React", "Firebase", "iOS", "Android", "UX", "UI", "Mobile Application","Design Thinking", "User Research", "Prototyping", "User Testing", "Class Project", "Main Project"],
     featured: true,
-    website: "https://hci.stanford.edu/courses/cs147/2018/au/projects/TransformingLivingSpace/Sprite/"
+    website: "https://hci.stanford.edu/courses/cs147/2018/au/projects/TransformingLivingSpace/Sprite/",
+    imageFolder: "2-sprite",
+    images:["final presentation.jpg",
+            "prototype slides.jpg",
+            "Sprite Med-fi Prototype.jpg",
+            "sprite poster.jpeg",
+            "stickynote_wireframe.jpg",
+            "team brainstorm.JPG"]
   },
   {
     img: "/images/rendezvous_browser.png",
@@ -33,6 +57,8 @@ const tileData = [
     date: "2020",
     description:"For my senior capstone project I worked on a team of five to create a mini-startup in an area of our interest. At the time, we were thinking about where we would be in six months, all new graduates living in new cities wanting to meet interesting people. Together we designed, built, and tested an event platform for connecting people to events that they enjoy and people they might enjoy them with. The website was built in React with a Firebase backend, and used a custom AI algorithm and Google Cloud Functions to identify optimal event groups.",
     attributes: ["Digital","Team", "React", "Firebase", "UX", "Web Application", "Class Project"],
+    imageFolder: "3-rendezvous",
+    images:["aboutpage.png","event.png","Medium Fi Prototype.jpg","signin.png","stylesheet.png"]
   },
   {
     img: "/images/glassdoor_redesign.png",
@@ -41,6 +67,8 @@ const tileData = [
     date: "2019",
     description:"Our team of three was tasked with understanding student issues in the job hunting process by redesigning Glassdoor's mobile application. Through user testing we identified an exploratory behavior of young students interested in adjacent industries and titles not well suited for current filters. We built and tested experience, low-fidelity, and medium-fidelity prototypes to solve this problem, culminating in a clickable protoytpe demonstrating our final galaxy-inspired solution.",
     attributes: ["Digital","Team", "UX", "UI", "Figma", "Prototyping", "Class Project"],
+    imageFolder: "4-glassdoor",
+    images: ["survey.png","brainstorm in class.jpg","draft_wireframe.jpg","Page1.png","Page2.png","Page3.png","Page4.png","Page5 FIx.png","stickies_2.jpg","ui_grid1.jpg"]
   },
   {
     img: "/images/bow_stand.png",
@@ -49,6 +77,8 @@ const tileData = [
     date: "2018",
     description:"In Design for Manufacturing I got the opportunity to learn how our everyday objects are made with hands-on experience with milling, lathing, and finishing tools. For the final project I chose to make an archer's bow stand. Inspired by tent poles, each leg of the stand collapses for easy storage and snaps in to place when released. I got to a first version of the central component relatively quickly, but was able to improve the design and machine a new piece twice more before the final delivery, leading to a perfect fit.",
     attributes: ["Physical", "Manufacturing", "Prototyping", "Design Thinking", "Class Project"],
+    imageFolder: "5-me203",
+    images:["bow_on_stand.jpg","Presentation Slide Final Clara Kelley.jpeg","prototype.jpg","shellmill.jpg","version1.jpg"]
   },
   {
     img: "/images/waffle_iron_no_text.png",
@@ -57,6 +87,8 @@ const tileData = [
     date: "2019",
     description:"The professor teaching CAD and CNC at Stanford pushed me to think bolder, think weirder. The result was this: a waffle cone iron that creates waffle cones in the shape of paper airplanes. The top side is embossed with a woodgrain pattern and the bottom with a geometric pattern. Each groove marks a place in the cone which must be flexible enough to hold a corner. The hot cone is then put in a press and cools into the shape of a paper airplane. There was no reason for this project except to practice manufacturing skills and create something that others can enjoy. I did make the cones complete with ice cream at the project showcase.",
     attributes: ["Physical", "Manufacturing", "Prototyping", "Design Thinking", "Solidworks", "CAD", "CNC", "Class Project"],
+    imageFolder:"6-waffle_iron",
+    images:["waffle_iron_poster_2019.jpg","airplane.gif","bottle opener in use.jpg","bottle opener.jpg","cone on iron.jpg","iron machining.jpg","iron on table.jpg","maze_final.jpg","maze_machining.jpg","me_machining.jpg","opener machining.jpg","post machining.jpg","waffle rotated drawing.png"]
   },
   {
     img: "/images/silkscreening_john.png",
@@ -65,6 +97,8 @@ const tileData = [
     attributes: ["Physical", "Graphic Design", "Adobe Creative Suite", "Art"],
     description:"I was lucky enough to learn graphic design using the Adobe Creative Suite in middle school. Over the years I've been able to use those skills to design graphics for t-shirts for clubs and other activities with friends. I use an at-home silkscreening kit to burn screens of emulsion so that I can make many shirts at a time.",
     date: "2018",
+    imageFolder:"7-silkscreen",
+    images:["ifsel_branding_final_2016.jpg","john_shirts.jpg","seraphim.jpg","silkscreening_2017.jpg","zoom eng.jpg"]
   },
   {
     img: "/images/x2_in_use.png",
@@ -75,6 +109,8 @@ const tileData = [
     credit: " Image courtesy of Skydio ",
     date: "2019",
     featured: true,
+    imageFolder:"8-skydio_SRR",
+    images:["confidential.jpg","iPad_Landscape.png","ubuntu-logo14.png","X2_Front_Final.png"]
   },
   {
     img: "/images/s2_lifestyle.jpg",
@@ -85,6 +121,8 @@ const tileData = [
     description:"I returned to Skydio in 2020 to explore my interest in user research and understanding how to improve a product for users. I interviewed consumers using the product in all sorts of interesting and unexpected ways, analyzed those conversations to find patterns and insights, and identified key problems and solutions which I presented to the entire company. I am delighted to know that I was able to communicate user's needs clearly and effectively to stakeholders in developing the product and future products.",
     date: "2020",
     featured: true,
+    imageFolder: "9-skydio_UX",
+    images:["confidential.jpg","skydio2lifestyle-11.jpg","1024px-Google_Meet_text_logo_dark.svg.png","2017-surveymonkey-new-logo-design-4.png"]
   },
   {
     img: "/images/gesture robot.png",
@@ -94,6 +132,8 @@ const tileData = [
     description:"In the hybrid electrical- and computer-engineering systems class CS107e I worked on a team of three to design a product using bare metal Raspberry Pis. My team was all interested in robots, so we built a pair of devices: a two-wheeled robot with a garage door receiver and a gesture-based controller with a garage door opener. Users tilted and rotated their hand to wirelessly guide the robot through a tape maze. This project was a great first exercise in version control and software engineering on a team in a controlled classroom environment.",
     date: "2018",
     featured: true,
+    imageFolder:"10-team_tea",
+    images:["tea flag.jpg","above.jpg","maze.gif","side.jpg"]
   },
   {
     img: "/images/suave_example.png",
@@ -103,7 +143,10 @@ const tileData = [
     credit: " Image courtesy of Russel Kao ",
     description:"I took Stanford UAV Club's free drone-building class SUAVE101 in Spring 2017, and became a mentor the next fall. This classes teaches students basic electrical, coding, and manufacturing skills, and leads them through building a waypoint autonomous quadcopter in 10 weeks. Each quarter I mentored 10 teams from unpacking parts to flying their vehicle for the first time. This experience led me to love working with people and working in an environment that wants everyone to succeed.",
     date: "2018",
-    website: "https://stanforduav.org/"
+    website: "https://stanforduav.org/",
+    imageFolder:"11-suave101",
+    images:["IMG_1623.jpg","DSC03453.jpg","DSC04597.jpg","DSC04777.jpg","DSC05036.jpg","DSC06195.jpg","IMG_0747.jpg","IMG_1137.jpg","IMG_1614.jpg"]
+
   },
   {
     img: "/images/archery_team.JPG",
@@ -113,7 +156,9 @@ const tileData = [
     credit: " Image courtesy of Jeff Zhang ",
     description:"I joined the archery team my freshman year of college because it sounded like my kind of exercise and my first impression of the team was a really welcoming place. Archery grew to become my strongest community on campus, and I joined leadership managing the equipment my Junior year. With five tournaments, six weekly practices, and often more than 50 team members, keeping track of and maintaining our two garages worth of equipment was no easy feat. But I so thoroughly enjoyed the responsibility that I was voted President the next year. I helped our leadership team navigate the rapidly shifting landscape of those early COVID-19 months, and a peaceful transition to online learning.",
     date: "2020",
-    website: "http://archery.stanford.edu/"
+    website: "http://archery.stanford.edu/",
+    imageFolder:"12-archery",
+    images:["team.jpg","Clara01754.gif","DSC01758.JPG","DSC02017.JPG","DSC02031.JPG","DSC02048.JPG","DSC02073.JPG","summer-camp-page-2.jpg"]
   },
   {
     img: "/images/coral compass.JPG",
@@ -123,7 +168,9 @@ const tileData = [
     description:"I spent my Sophomore year as an intern in the Virtual Human Interaction Lab at Stanford, helping to develop projects for PhD student's research in VR and AR. I built out several prototypes in the theme of getting users immersed in interacting with a deteriorating ocean environment as part of research on climate change. This culminated in building an experience for Tribeca 2018 titled Coral Compass. Though the final experience was much simpler than originally planned, I enjoyed learning Unity on a team of dedicated VR developers working on projects across the spectrum of cutting edge research.",
     date: "2018",
     credit: "Image courtesy of VHIL",
-    website: "https://vhil.stanford.edu/coralcompass/"
+    website: "https://vhil.stanford.edu/coralcompass/",
+    imageFolder: "13-vhil",
+    images:["steam_store.png","coral compass.jpg","divers.png","map.png"]
   },
   {
     img: "/images/ar world logo with text.png",
@@ -132,6 +179,8 @@ const tileData = [
     attributes: ["Digital", "VR", "UI", "Swift", "iOS", "Class Project"],
     description:"In Paul Hegarty's iOS development class I got the opportunity to play with ARKit for the first time. I was excited about the possibility of users building their own AR experiences with any object they wanted, and focused on developing an iOS application that would incorporate 3D models found on the internet into a user's environment. The application was built in Swift over a few short weeks and demonstrated in the final class.",
     date: "2019",
+    imageFolder:"14-arworld",
+    images:["IMG_0006.PNG","IMG_0009.PNG","MyARWorldPresentation.001.jpeg","demo.gif"]
   },
   {
     img: "/images/e-wings.jpg",
@@ -140,6 +189,8 @@ const tileData = [
     attributes: ["Digital", "Physical", "Embedded", "Mechanical Engineering", "Electrical Engineering", "Art", "Class Project"],
     description:"I was fortunate enough to be able to take a class on invention in high school. We got to play with all kinds of really interesting devices, but I was particularly fascinated by the brain interface possibilites of the early MindWave headset. I wanted the piece to be able to show a user's inner thoughts on the outside, so I built an accompanying set of wings using a microcontroller and small servo motors. My friends quite loved the whimsical nature of the project.",
     date: "2014",
+    imageFolder:"15-mind_wings",
+    images:["Feathers Edited.jpg","Front Edited.jpg","Side (Cover) Edited.jpg"]
   },
   {
     img: "/images/me210robot.png",
@@ -148,6 +199,8 @@ const tileData = [
     attributes: ["Digital", "Physical", "Embedded", "C", "Mechanical Engineering", "Electrical Engineering", "Team", "Class Project"],
     description:"I worked on a team of four to build this robot which is designed to fight in a pie sumo battle against two other robots for who can take up the most space. The robot drives up to the center of the circle and extends two linear actuators into the moving walls, planting itself on its back brake. This project involved mechanical, electrical, and computational engineering to work. It was wicked fun.",
     date: "2020",
+    imageFolder:"16-me210",
+    images:["video-1583814038.gif","89257135_199827457997730_3651621748140408832_n.jpg","89289785_1182093552122066_2415109159067320320_n.jpg","89293767_199438414454918_1693936020665401344_n.jpg","89445051_583306638926638_3674221157382356992_n.jpg","89662128_573701043491891_7747447027125977088_n copy.jpg","IMG_20200308_173605.jpg"]
   },
   {
     img: "/images/whatsnext.png",
@@ -156,6 +209,8 @@ const tileData = [
     attributes: ["Digital", "Team", "Figma", "UI", "UX", "User Research"],
     description:"During the start of the COVID-19 pandemic, I was invited to join group of friends at the first of MIT's COVID-19 themed hackathons. We developed a re-design that we hoped would help those who are immune compromised get assistance from their neighbors and connect communities otherwise distrupted by the pandemic. Our solution won in our category, and we continued our efforts by conducting user research to better understand young people and their community engagement in this time. The results are summarized in an article to be released later this year.",
     date: "2020",
+    imageFolder:"17-whatsnext",
+    images:["WhatsNext (3).jpg","Frame 8.png","Frame 9.png","Frame 10.png","WhatsNext (1).jpg","WhatsNext (2).jpg","WhatsNext (4).jpg","WhatsNext (5).jpg","WhatsNext (6).jpg","WhatsNext (7).jpg","WhatsNext (8).jpg","WhatsNext (9).jpg"]
   },
   {
     img: "/images/gitsdone.png",
@@ -164,7 +219,9 @@ const tileData = [
     attributes: ["Physical", "Digital", "Team", "Figma", "UI", "UX", "User Research", "Class Project"],
     description:"My team of three tackled building a board game to teach early computer scientists about good version control practices. Through brainstorms, playtest, and prototypes, we designed a game we're proud of. The final game is ready-to-ship quality with a custom white-erase mat.",
     date: "2020",
-    website: "https://medium.com/serious-games-377g/git-done-game-design-and-iteration-d9c9ca569b2b"
+    website: "https://medium.com/serious-games-377g/git-done-game-design-and-iteration-d9c9ca569b2b",
+    imageFolder:"18-git_game",
+    images:["setup sideways.jpg","first playtest.jpg","full setup.jpg","game board prototype.jpg","game played.jpg"]
   },
   {
     img: "/images/commute.jpg",
@@ -175,6 +232,8 @@ const tileData = [
     description:"Freshman year I took a leap of faith and tried out underwater archaeology. In this 6-week field school I learned a ton about teamwork, documentation, and dedication. In the end, my computer science background allowed me to automate a process that the team had been struggling with for years. It was a wonderful aha! moment. ",
     date: "2017",
     website: "https://marzamemi.stanford.edu/",
+    imageFolder:"19-marzamemi",
+    images:["19250577_918865134922783_631447949657633125_o.jpg","19399582_920726901403273_142430932326797273_n.jpg","20819078_953782378097725_700875561673573522_o.jpg","commute.jpg"]
   },
   {
     img: "/images/teapot.jpg",
@@ -183,6 +242,8 @@ const tileData = [
     attributes: ["Physical", "Art"],
     description:"In my gap year between high school and college I picked up throwing, a discipline in ceramics. I was able to continue this at Stanford where I learned to make teapots and multiples (identical cups or bowls). My home is full of ceramic failures, but what I love about this art is that every piece is still functional.",
     date: "2018",
+    imageFolder:"20-pottery",
+    images:["circle.jpg","color.jpg","pairs.jpg","pencil cups.jpg","throwing.jpg","teapot.jpg"]
   },
   {
     img:"/images/playtest.jpg",
@@ -192,7 +253,9 @@ const tileData = [
     description:"The class Serious Games was about taking serious topics and finding a way to communicate them through games. My team chose to focus on the prison-industrial complex and the many stakeholders in what has become a uniquely American problem. Through iterations and playtests we created a game that could be just the tip of the iceberg of a new way to explain the impact of this issue on our society.",
     date: "2020",
     credit:"Image courtesy of Vincent Nicandro",
-    website:"https://medium.com/serious-games-377g/developing-incarceration-a6c8cfa2dea3"
+    website:"https://medium.com/serious-games-377g/developing-incarceration-a6c8cfa2dea3",
+    imageFolder:"21-incarceration_game",
+    images:["title.png","final playtest.jpg","outside playtest.jpg","playtest.jpg"]
   },
   {
     img:"/images/bird necklace.png",
@@ -201,6 +264,8 @@ const tileData = [
     attributes: ["Physical", "Art", "Class Project"],
     description:"I got the unique opportunity to learn silversmithing from professional jewelers. This piece using the lost-wax casting technique is inspired by a baby mobile - each chain connected to a rotating branch can make the bird flap its wings. The piece can also be worn as a necklace with the center chain removed.",
     date: "2018",
+    imageFolder:"22-jewelry",
+    images:["bird1.jpg","bird2.jpg","cup.jpg","ring.jpg"]
   }
 ];
 
