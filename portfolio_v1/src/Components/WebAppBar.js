@@ -56,21 +56,17 @@ const useStyles = makeStyles((theme) => ({
 const history = createBrowserHistory();
 
 
-function MobileDrawer({open, onClose, onItemClick}) {
+function MobileDrawer(props) {
   const classes = useStyles();
 
-  const [state, setState] = React.useState({
-    menuOpen: false,
-  });
-
   return (
-    <Drawer variant='temporary' open={open} onClose={onClose} classes={classes}>
+    <Drawer variant='temporary' open={props.open} onClose={props.onClose}>
       <List>
           <ListItem
             button
             component={RouterLink}
             to="/"
-            onClick={onItemClick("Home")}
+            onClick={props.onItemClick("Home")}
           >
             <ListItemText>Explore</ListItemText>
           </ListItem>
@@ -78,7 +74,7 @@ function MobileDrawer({open, onClose, onItemClick}) {
             button
             component={RouterLink}
             to="/work"
-            onClick={onItemClick("Work")}
+            onClick={props.onItemClick("Work")}
           >
             <ListItemText>Work</ListItemText>
           </ListItem>
@@ -86,7 +82,7 @@ function MobileDrawer({open, onClose, onItemClick}) {
             button
             component={RouterLink}
             to="/about"
-            onClick={onItemClick("About")}
+            onClick={props.onItemClick("About")}
           >
             <ListItemText>About</ListItemText>
           </ListItem>
@@ -100,12 +96,12 @@ function WebAppBar(){
     const [drawer, setDrawer] = useState(false);
 
     const toggleDrawer = () => {
-    setDrawer(!drawer);
+      setDrawer(!drawer);
     };
 
     const onItemClick = title => () => {
     console.log(title);
-    setDrawer(!drawer);
+      setDrawer(!drawer);
     };
 
     return (
@@ -118,7 +114,7 @@ function WebAppBar(){
             <MenuIcon />
           </IconButton>
           </Hidden>
-          <Typography variant="h6" color="black" underline="none" className={classes.title} >
+          <Typography variant="h6" underline="none" className={classes.title} >
             <RouterLink to="/" className={classes.title}>
             Clara Kelley
             </RouterLink>

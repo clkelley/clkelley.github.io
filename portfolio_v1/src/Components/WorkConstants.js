@@ -206,7 +206,7 @@ const tileData = [
     img: "/images/whatsnext.png",
     index: 17,
     title: "WhatsNext MIT COVID-19 Hackathon Project",
-    attributes: ["Digital", "Team", "Figma", "UI", "UX", "User Research"],
+    attributes: ["Digital", "Team", "Figma", "UI", "UX", "User Research", "Main Project"],
     description:"During the start of the COVID-19 pandemic, I was invited to join group of friends at the first of MIT's COVID-19 themed hackathons. We developed a re-design that we hoped would help those who are immune compromised get assistance from their neighbors and connect communities otherwise distrupted by the pandemic. Our solution won in our category, and we continued our efforts by conducting user research to better understand young people and their community engagement in this time. The results are summarized in an article to be released later this year.",
     date: "2020",
     imageFolder:"17-whatsnext",

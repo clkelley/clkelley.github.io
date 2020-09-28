@@ -155,13 +155,13 @@ function About(props) {
         <Typography variant="h4" gutterBottom>
           about me
         </Typography>
-        <Typography variant="body2" paragraph="true" align="left">
+        <Typography variant="body2" paragraph={true} align="left">
           Hi! I'm a Master's Student at Stanford University studying Computer Science with a concentration in Human-Computer Interaction. I've loved making things for as long as I can remember.
         </Typography>
-        <Typography variant="body2" paragraph="true" align="left">
+        <Typography variant="body2" paragraph={true} align="left">
           I have a passion for how people interact with technology in the physical world. I do work in mechanical and electrical engineering building robots and wiring circuits, but I mostly write software and design interfaces to solve problems.
         </Typography>
-        <Typography variant="body2" paragraph="true" align="left">
+        <Typography variant="body2" paragraph={true} align="left">
           This website (built in React using Material UI) is full of projects I've developed and work experience from my undergraduate years also at Stanford. I'd be delighted to answer any questions - my email is listed at the top of my resume. Happy exploring!
         </Typography>
         <Typography variant="h6" gutterBottom>

@@ -28,7 +28,7 @@ const theme = createMuiTheme({
   status: {
     danger: 'orange',
   },
-  shadows: ["none"],
+  shadows: ["none", "none", "none", "none", "none"],
   typography: {
     fontFamily: [
       '"Montserrat"',
