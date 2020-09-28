@@ -106,7 +106,7 @@ function WebAppBar(){
 
     return (
       <React.Fragment>
-      <Router history={history}>
+      <Router history={history} basename={process.env.PUBLIC_URL}>
       <AppBar position="fixed">
         <Toolbar>
           <Hidden smUp>
