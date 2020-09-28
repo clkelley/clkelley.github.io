@@ -161,7 +161,7 @@ const tileData = [
     images:["team.jpg","Clara01754.gif","DSC01758.JPG","DSC02017.JPG","DSC02031.JPG","DSC02048.JPG","DSC02073.JPG","summer-camp-page-2.jpg"]
   },
   {
-    img: "/images/coral compass.jpg",
+    img: "/images/vhil_coral_compass.jpg",
     index: 13,
     title: "VR Developer at VHIL Stanford",
     attributes: ["Digital", "Team", "VR", "UX", "Unity", "C#", "Python", "Internship", "Main Project"],
