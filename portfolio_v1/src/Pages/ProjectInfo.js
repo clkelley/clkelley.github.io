@@ -89,7 +89,7 @@ function ProjectInfo(props) {
         </GridList>
         </Grid>
         <Grid sm={12} md={6} item>
-          <Typography variant="body2" align="left">
+          <Typography variant="body2" align="left" style={{whiteSpace: 'pre-line'}}>
             {thisTile.description}
           </Typography>
           <Typography align="right" margin="1rem">
