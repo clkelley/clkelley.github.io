@@ -1,7 +1,8 @@
 import React, {Component, useState} from 'react';
 import logo from '../logo.svg';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
+  HashRouter as Router,
   Switch,
   Route,
   Link as RouterLink

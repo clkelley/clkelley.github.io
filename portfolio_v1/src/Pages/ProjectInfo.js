@@ -105,7 +105,7 @@ function ProjectInfo(props) {
             label={title}
             className={classes.chipStyle}
             component="a"
-            href={"/work/"+title}
+            href={"#/work/"+title}
             clickable/>
           ))}
         </Grid>
