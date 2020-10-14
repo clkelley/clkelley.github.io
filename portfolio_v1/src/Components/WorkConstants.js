@@ -39,7 +39,7 @@ const tileData = [
     title: "Sprite",
     date: "2018",
     description:"In my HCI Studio course, I worked on a team of 4 to identify a need in the living space experience and design and build a solution. Through user interviews we discovered many smart home devices are barely used except for simple tasks. After evaluating and iterating on prototypes from playacting to wireframes, I built out our cross-platform mobile app solution in React Native using Expo. Our team was voted best demonstration by industry professionals attending the final session. \n\r \n\r For in-depth coverage of our team's entire design process (from needfinding to prototyping), please visit the website linked below.",
-    attributes: ["Digital","Team", "React", "Firebase", "iOS", "Android", "UX", "UI", "Mobile Application","Design Thinking", "User Research", "Prototyping", "User Testing", "Class Project", "Main Project"],
+    attributes: ["Digital","Team", "React", "Firebase", "iOS", "Android", "UX", "UI", "Mobile Application","Design Thinking", "User Research", "Prototyping", "User Testing", "Class Project", "Main Project", "UX Portfolio"],
     featured: true,
     website: "https://hci.stanford.edu/courses/cs147/2018/au/projects/TransformingLivingSpace/Sprite/",
     imageFolder: "2-sprite",
@@ -48,7 +48,13 @@ const tileData = [
             "Sprite Med-fi Prototype.jpg",
             "sprite poster.jpeg",
             "stickynote_wireframe.jpg",
-            "team brainstorm.JPG"]
+            "team brainstorm.JPG"],
+    uxportfolio:[{id:0, photo:"needfinding.png", title:"Needfinding", summary:"Interview consenting strangers in public spaces chosen by affiliation with topic. Analyze transcripts using an empathy map. Identify key tensions and corresponding insights from interviews."},
+                 {id:1, photo:"exp_prototype.png", title:"Experience Prototype", summary:"Conduct additional needfinding on narrowed space. Craft POVs and How Might We's tailored to specific insights. Test experience prototypes on interviewees and collect feedback."},
+                 {id:2, photo:"video_storyboard.png", title:"Concept Video", summary:"Identify key value proposition and film a user story centered concept video. Showcase the problem space and the solution through distinct user tasks."},
+                 {id:3, photo:"complex_task_low_fidelity.png", title:"Low- and Medium-Fidelity Prototypes", summary:"Select tasks that assess riskiest assumptions and build low-fidelity prototype to evaluate solution. Iterate on interface to create medium-fidelity clickable wireframe prototype. Run usability tests and heuristic evaluation."},
+                 {id:4, photo:"high_fidelity.png", title:"High Fidelity Prototype", summary:"Create high-fidelity prototype in app form complete with navigable UI and user accounts. Mock the core technology using Wizard of Oz methods."},
+                 {id:5, photo:"sprite poster.jpeg", title:"Demo / Presentation", summary:"Practice and present live interactive demo for visiting industry professionals. Deliver elevator pitch."}]
   },
   {
     img: "/images/rendezvous_browser.png",
@@ -66,9 +72,15 @@ const tileData = [
     title: "Redesign: Glassdoor Mobile",
     date: "2019",
     description:"Our team of three was tasked with understanding student issues in the job hunting process by redesigning Glassdoor's mobile application. Through user testing we identified an exploratory behavior of young students interested in adjacent industries and titles not well suited for current filters. We built and tested experience, low-fidelity, and medium-fidelity prototypes to solve this problem, culminating in a clickable protoytpe demonstrating our final galaxy-inspired solution.",
-    attributes: ["Digital","Team", "UX", "UI", "Figma", "Prototyping", "Class Project"],
+    attributes: ["Digital","Team", "UX", "UI", "Figma", "Prototyping", "Class Project", "UX Portfolio"],
     imageFolder: "4-glassdoor",
-    images: ["survey.png","brainstorm in class.jpg","draft_wireframe.jpg","Page1.png","Page2.png","Page3.png","Page4.png","Page5 FIx.png","stickies_2.jpg","ui_grid1.jpg"]
+    images: ["survey.png","draft_wireframe.jpg","Page1.png","Page5 FIx.png","stickies_2.jpg","ui_grid1.jpg"],
+    uxportfolio:[{id:0, photo:"survey.png", title:"Survey", summary:"Conduct initial overview survey of problem domain and user population. Identify common competitor products and user subgroups."},
+                 {id:1, photo:"usability_testing.png", title:"Usability Testing", summary:"Run usability tests on a diverse set of users from user population, collecting demographic data and recordings of users attempting pre-determined tasks"},
+                 {id:2, photo:"insights.jpg", title:"Insights", summary:"Analyze usability tests and user interviews for common themes and problem areas. Identify solution domain and POV."},
+                 {id:3, photo:"brainstorm in class.jpg", title:"Brainstorm", summary:"Brainstorm possible redesigns based on user insights. Strive for quantity to achieve quality. Identify most interesting ideas and riskiest assumptions."},
+                 {id:4, photo:"draft_wireframe.jpg", title:"Prototyping / RITE Method", summary:"Create low fidelity prototype and iterate on solutions using the RITE method. Analyze user interactions and improve prototype."},
+                 {id:5, photo:"Page5 FIx.png", title:"Prototyping / Wireframe", summary:"Create medium fidelity digital prototype and conduct heuristic evaluation. Document methodology and deliver resulting redesign."}]
   },
   {
     img: "/images/bow_stand.png",
@@ -116,13 +128,17 @@ const tileData = [
     img: "/images/s2_lifestyle.jpg",
     index: 9,
     title: "Skydio User Research",
-    attributes: ["Digital", "Physical", "UX", "User Research", "Design Thinking", "Internship", "Drones", "Main Project"],
+    attributes: ["Digital", "Physical", "UX", "User Research", "Design Thinking", "Internship", "Drones", "Main Project", "UX Portfolio"],
     credit: " Image courtesy of Skydio ",
-    description:"I returned to Skydio in 2020 to explore my interest in user research and understanding how to improve a product for users. I interviewed consumers using the product in all sorts of interesting and unexpected ways, analyzed those conversations to find patterns and insights, and identified key problems and solutions which I presented to the entire company. I am delighted to know that I was able to communicate user's needs clearly and effectively to stakeholders in developing the product and future products. \n\n Survey: Collect aggregate data about common pain points, interests, and related products. Identify consumers with unique perspectives who will become valuable experts in using the product for their particular vertical.  Contact them for a potential follow up interview. \n Interviews: Using techniques borrowed from anthropology, understand each user's story. Produce one-pagers and executive summaries for each interviewee. \n Insights: Develop POVs and How Might We's from interviews. Identify key issues and strengths that reappear across interviews. \n Solutions: Brainstorm and define key problem areas, product stories, and personas to guide further development. Present these findings in a succinct and accessible format. Develop interactive research document for defining and answering future questions using past interviews.",
+    description:"I returned to Skydio in 2020 to explore my interest in user research and understanding how to improve a product for users. I interviewed consumers using the product in all sorts of interesting and unexpected ways, analyzed those conversations to find patterns and insights, and identified key problems and solutions which I presented to the entire company. I am delighted to know that I was able to communicate user's needs clearly and effectively to stakeholders in developing the product and future products.",
     date: "2020",
     featured: true,
     imageFolder: "9-skydio_UX",
-    images:["confidential.jpg","skydio2lifestyle-11.jpg","1024px-Google_Meet_text_logo_dark.svg.png","2017-surveymonkey-new-logo-design-4.png"]
+    images:["confidential.jpg","skydio2lifestyle-11.jpg"],
+    uxportfolio:[{id:0, photo:"2017-surveymonkey-new-logo-design-4.png", title:"Survey", summary:"Collect aggregate data about common pain points, interests, and related products. Identify consumers with unique perspectives who will become valuable experts in using the product for their particular vertical."},
+                 {id:1, photo:"1024px-Google_Meet_text_logo_dark.svg.png", title:"Interviews", summary:"Contact survey respondents for a potential follow up interview. Using techniques borrowed from anthropology, learn each user's story through a video interview. Produce one-pagers and executive summaries for each interviewee."},
+                 {id:2, photo:"stickynote_example.png", title:"Insights", summary:"Analyze interview transcripts and user data to uncover patterns. Develop POVs and How Might We's from interviews. Identify key issues and strengths that reappear across interviews."},
+                 {id:3, photo:"Google-Slides.png", title:"Solutions", summary:"Brainstorm and define key problem areas, product stories, and personas to guide further development. Present these findings in a succinct and accessible format. Develop interactive research document for defining and answering future questions using past interviews."}]
   },
   {
     img: "/images/gesture robot.png",

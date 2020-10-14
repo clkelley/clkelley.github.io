@@ -21,6 +21,7 @@ import {
   Close,
   ZoomIn
 } from '@material-ui/icons';
+import DesignStep from "../Components/DesignStep.js"
 
 import tileData from "../Components/WorkConstants.js"
 
@@ -108,6 +109,15 @@ function ProjectInfo(props) {
             href={"#/work/"+title}
             clickable/>
           ))}
+        </Grid>
+        <Grid sm={12} md={12} wrap="wrap" direction="row" container item>
+        {thisTile.uxportfolio &&
+         thisTile.uxportfolio.map(function(uxtile) {
+           return (<Grid sm={12} md={6} item>
+                    <DesignStep id={uxtile.id} uxtile={uxtile} imageFolder={thisTile.imageFolder}/>
+                  </Grid>)}
+           )
+        }
         </Grid>
       </Grid>
       <Dialog open={imageOpen} onClose={handleImageClose}>
