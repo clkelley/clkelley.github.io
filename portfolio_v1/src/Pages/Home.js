@@ -7,6 +7,7 @@ import {
   GridListTile,
   Typography,
 } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 
 import tileData from "../Components/WorkConstants.js"
 import ProjectCard from "../Components/ProjectCard.js"
@@ -34,8 +35,13 @@ function Home(props) {
 
   const [hover, setHover] = useState(false);
 
+  const history = useHistory();
 
   const featuredTiles = tileData.filter(tile => tile.featured == true).sort((a, b) => parseInt(b.date) - parseInt(a.date));
+
+  const handleChipClick = (chipName) => {
+    history.push("work/"+chipName);
+  }
 
   return (
     <div className={classes.root}>
@@ -44,7 +50,6 @@ function Home(props) {
       </Typography>
       <Grid container>
         <Grid sm={12} md={8} item>
-
           {/*key={tileData[8].img}
           image={tileData[8].img}
           title={tileData[8].title}
@@ -56,6 +61,7 @@ function Home(props) {
           <ProjectCard
             key={featuredTiles[0].index}
             tile={featuredTiles[0]}
+            chipCallback={handleChipClick}
             />
         </Grid>
         <Grid sm={12} md={4} item>
@@ -66,12 +72,14 @@ function Home(props) {
           <ProjectCard
             key={featuredTiles[1].index}
             tile={featuredTiles[1]}
+            chipCallback={handleChipClick}
             />
         </Grid>
         <Grid sm={12} md={8} item>
           <ProjectCard
             key={featuredTiles[2].index}
             tile={featuredTiles[2]}
+            chipCallback={handleChipClick}
             />
         </Grid>
         <Grid sm={12} md={4} item>
@@ -82,6 +90,7 @@ function Home(props) {
           <ProjectCard
             key={featuredTiles[3].index}
             tile={featuredTiles[3]}
+            chipCallback={handleChipClick}
             />
         </Grid>
       </Grid>
