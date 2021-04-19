@@ -165,7 +165,7 @@ function About(props) {
           This website (built in React using Material UI) is full of projects I've developed and work experience from my undergraduate years also at Stanford. I'd be delighted to answer any questions - my email is listed at the top of my resume. Happy exploring!
         </Typography>
         <Typography variant="h6" gutterBottom>
-          seeking opportunities for fall 2021
+          not currently seeking opportunities
         </Typography>
         <Button onClick={handleResumeClickOpen}>
           Open Resume
